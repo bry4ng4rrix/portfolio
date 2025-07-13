@@ -188,11 +188,14 @@ export default function ModernPortfolio() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg"  className="bg-blue-600 text-white hover:bg-blue-700">
-                 <a href="/#projects">Voir mes projets</a>
+               <a href="#projects">Voir mes projets</a>
+
               </Button>
+                <a href="/cv.pdf" download>
               <Button size="lg" variant="outline" className="border-foreground ">
-                <a href="/cv.pdf" download>Télécharger CV</a>
+              Télécharger CV
               </Button>
+              </a>
             </div>
             <div className="flex justify-center space-x-6 mt-8">
               <Link href="https://github.com/bry4ng4rrix" className="text-muted-foreground hover:text-blue-600 transition-colors">

@@ -66,6 +66,7 @@
 
 @layer theme {
   :root, :host {
+    --color-red-500: oklch(63.7% .237 25.331);
     --color-orange-100: oklch(95.4% .038 75.164);
     --color-orange-200: oklch(90.1% .076 70.697);
     --color-orange-800: oklch(47% .157 37.304);
@@ -933,6 +934,10 @@
 
   .bg-purple-100 {
     background-color: var(--color-purple-100);
+  }
+
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
 
   .bg-secondary {

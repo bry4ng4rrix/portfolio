@@ -1057,35 +1057,35 @@ function ModernPortfolio() {
                                         size: "lg",
                                         className: "bg-blue-600 text-white hover:bg-blue-700",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "/#projects",
+                                            href: "#projects",
                                             children: "Voir mes projets"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
                                             lineNumber: 191,
-                                            columnNumber: 18
+                                            columnNumber: 16
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/portfolio.tsx",
                                         lineNumber: 190,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                        size: "lg",
-                                        variant: "outline",
-                                        className: "border-foreground ",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "/cv.pdf",
-                                            download: true,
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "/cv.pdf",
+                                        download: true,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                            size: "lg",
+                                            variant: "outline",
+                                            className: "border-foreground ",
                                             children: "Télécharger CV"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 194,
-                                            columnNumber: 17
+                                            lineNumber: 195,
+                                            columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/portfolio.tsx",
-                                        lineNumber: 193,
-                                        columnNumber: 15
+                                        lineNumber: 194,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
@@ -1103,21 +1103,6 @@ function ModernPortfolio() {
                                             className: "w-6 h-6"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 199,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/portfolio.tsx",
-                                        lineNumber: 198,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "https://www.linkedin.com/in/bryan-garrix-5a0b07258",
-                                        className: "text-muted-foreground hover:text-blue-600 transition-colors",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"], {
-                                            className: "w-6 h-6"
-                                        }, void 0, false, {
-                                            fileName: "[project]/portfolio.tsx",
                                             lineNumber: 202,
                                             columnNumber: 17
                                         }, this)
@@ -1127,9 +1112,9 @@ function ModernPortfolio() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "https://bryanmfb4@gmail.com",
+                                        href: "https://www.linkedin.com/in/bryan-garrix-5a0b07258",
                                         className: "text-muted-foreground hover:text-blue-600 transition-colors",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"], {
                                             className: "w-6 h-6"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
@@ -1140,11 +1125,26 @@ function ModernPortfolio() {
                                         fileName: "[project]/portfolio.tsx",
                                         lineNumber: 204,
                                         columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "https://bryanmfb4@gmail.com",
+                                        className: "text-muted-foreground hover:text-blue-600 transition-colors",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                            className: "w-6 h-6"
+                                        }, void 0, false, {
+                                            fileName: "[project]/portfolio.tsx",
+                                            lineNumber: 208,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/portfolio.tsx",
+                                        lineNumber: 207,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/portfolio.tsx",
-                                lineNumber: 197,
+                                lineNumber: 200,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1177,7 +1177,7 @@ function ModernPortfolio() {
                                     children: "À propos de moi"
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 216,
+                                    lineNumber: 219,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1185,13 +1185,13 @@ function ModernPortfolio() {
                                     children: "Passionné par le développement web depuis plus de 5 ans, je crée des solutions innovantes et performantes."
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 220,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 215,
+                            lineNumber: 218,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1204,7 +1204,7 @@ function ModernPortfolio() {
                                             children: "Mon parcours"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 224,
+                                            lineNumber: 227,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1212,7 +1212,7 @@ function ModernPortfolio() {
                                             children: "Diplômé en informatique et spécialisé en développement full-stack. J’utilise des technologies modernes comme React, Next.js et Python-Django pour créer des applications web performantes et intuitives."
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 225,
+                                            lineNumber: 228,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1220,7 +1220,7 @@ function ModernPortfolio() {
                                             children: "Mon approche combine créativité et rigueur technique pour livrer des projets qui dépassent les attentes."
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 230,
+                                            lineNumber: 233,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1231,7 +1231,7 @@ function ModernPortfolio() {
                                                     children: "5+ années d'expérience"
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 234,
+                                                    lineNumber: 237,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1239,7 +1239,7 @@ function ModernPortfolio() {
                                                     children: "10+ projets réalisés"
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 235,
+                                                    lineNumber: 238,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1247,19 +1247,19 @@ function ModernPortfolio() {
                                                     children: "Freelance disponible"
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 239,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 233,
+                                            lineNumber: 236,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 223,
+                                    lineNumber: 226,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1269,7 +1269,7 @@ function ModernPortfolio() {
                                             children: "Compétences"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 241,
+                                            lineNumber: 244,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1295,7 +1295,7 @@ function ModernPortfolio() {
                                                                     children: skill.name
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/portfolio.tsx",
-                                                                    lineNumber: 254,
+                                                                    lineNumber: 257,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1306,13 +1306,13 @@ function ModernPortfolio() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/portfolio.tsx",
-                                                                    lineNumber: 255,
+                                                                    lineNumber: 258,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 253,
+                                                            lineNumber: 256,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1324,46 +1324,46 @@ function ModernPortfolio() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/portfolio.tsx",
-                                                                lineNumber: 258,
+                                                                lineNumber: 261,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 257,
+                                                            lineNumber: 260,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, index, true, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 247,
+                                                    lineNumber: 250,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 242,
+                                            lineNumber: 245,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 240,
+                                    lineNumber: 243,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 222,
+                            lineNumber: 225,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/portfolio.tsx",
-                    lineNumber: 214,
+                    lineNumber: 217,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/portfolio.tsx",
-                lineNumber: 213,
+                lineNumber: 216,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1380,7 +1380,7 @@ function ModernPortfolio() {
                                     children: "Mes Services"
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 275,
+                                    lineNumber: 278,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1388,13 +1388,13 @@ function ModernPortfolio() {
                                     children: "Je propose une gamme complète de services pour concrétiser vos projets digitaux."
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 276,
+                                    lineNumber: 279,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 274,
+                            lineNumber: 277,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1409,7 +1409,7 @@ function ModernPortfolio() {
                                                     children: service.icon
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 285,
+                                                    lineNumber: 288,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -1417,13 +1417,13 @@ function ModernPortfolio() {
                                                     children: service.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 286,
+                                                    lineNumber: 289,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 284,
+                                            lineNumber: 287,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1431,39 +1431,39 @@ function ModernPortfolio() {
                                                 children: service.description
                                             }, void 0, false, {
                                                 fileName: "[project]/portfolio.tsx",
-                                                lineNumber: 289,
+                                                lineNumber: 292,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 291,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 283,
+                                    lineNumber: 286,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 281,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/portfolio.tsx",
-                    lineNumber: 273,
+                    lineNumber: 276,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/portfolio.tsx",
-                lineNumber: 272,
+                lineNumber: 275,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$tech$2d$stack$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/portfolio.tsx",
-                lineNumber: 298,
+                lineNumber: 301,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1480,7 +1480,7 @@ function ModernPortfolio() {
                                     children: "Mes Projets"
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 304,
+                                    lineNumber: 307,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1488,13 +1488,13 @@ function ModernPortfolio() {
                                     children: "Découvrez quelques-uns de mes projets récents qui illustrent mes compétences et ma créativité."
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 305,
+                                    lineNumber: 308,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 303,
+                            lineNumber: 306,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1512,12 +1512,12 @@ function ModernPortfolio() {
                                                 className: "w-full h-48 object-cover p-2 rounded-xl"
                                             }, void 0, false, {
                                                 fileName: "[project]/portfolio.tsx",
-                                                lineNumber: 314,
+                                                lineNumber: 317,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 313,
+                                            lineNumber: 316,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -1526,20 +1526,20 @@ function ModernPortfolio() {
                                                     children: project.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 323,
+                                                    lineNumber: 326,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                                                     children: project.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 324,
+                                                    lineNumber: 327,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 322,
+                                            lineNumber: 325,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1552,12 +1552,12 @@ function ModernPortfolio() {
                                                             children: tag
                                                         }, tagIndex, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 329,
+                                                            lineNumber: 332,
                                                             columnNumber: 23
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 327,
+                                                    lineNumber: 330,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1574,19 +1574,19 @@ function ModernPortfolio() {
                                                                         className: "w-4 h-4 mr-2"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/portfolio.tsx",
-                                                                        lineNumber: 337,
+                                                                        lineNumber: 340,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     "Code"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/portfolio.tsx",
-                                                                lineNumber: 336,
+                                                                lineNumber: 339,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 335,
+                                                            lineNumber: 338,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1600,53 +1600,53 @@ function ModernPortfolio() {
                                                                         className: "w-4 h-4 mr-2 text-white"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/portfolio.tsx",
-                                                                        lineNumber: 343,
+                                                                        lineNumber: 346,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     "Demo"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/portfolio.tsx",
-                                                                lineNumber: 342,
+                                                                lineNumber: 345,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 341,
+                                                            lineNumber: 344,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 334,
+                                                    lineNumber: 337,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 326,
+                                            lineNumber: 329,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 312,
+                                    lineNumber: 315,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 310,
+                            lineNumber: 313,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/portfolio.tsx",
-                    lineNumber: 302,
+                    lineNumber: 305,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/portfolio.tsx",
-                lineNumber: 301,
+                lineNumber: 304,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1663,7 +1663,7 @@ function ModernPortfolio() {
                                     children: "Contactez-moi"
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 359,
+                                    lineNumber: 362,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1671,13 +1671,13 @@ function ModernPortfolio() {
                                     children: "Vous avez un projet en tête ? N'hésitez pas à me contacter pour en discuter."
                                 }, void 0, false, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 360,
+                                    lineNumber: 363,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 358,
+                            lineNumber: 361,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1690,7 +1690,7 @@ function ModernPortfolio() {
                                             children: "Informations de contact"
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 367,
+                                            lineNumber: 370,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1703,20 +1703,20 @@ function ModernPortfolio() {
                                                             className: "w-5 h-5 text-blue-600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 370,
+                                                            lineNumber: 373,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "bryanmfb4@email.com"
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 371,
+                                                            lineNumber: 374,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 369,
+                                                    lineNumber: 372,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1726,20 +1726,20 @@ function ModernPortfolio() {
                                                             className: "w-5 h-5 text-blue-600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 374,
+                                                            lineNumber: 377,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "github.com/bry4ng4rrix"
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 375,
+                                                            lineNumber: 378,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 373,
+                                                    lineNumber: 376,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1749,26 +1749,26 @@ function ModernPortfolio() {
                                                             className: "w-5 h-5 text-blue-600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 378,
+                                                            lineNumber: 381,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "linkedin.com/in/bryan-garrix-5a0b07258"
                                                         }, void 0, false, {
                                                             fileName: "[project]/portfolio.tsx",
-                                                            lineNumber: 379,
+                                                            lineNumber: 382,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 377,
+                                                    lineNumber: 380,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 368,
+                                            lineNumber: 371,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1779,7 +1779,7 @@ function ModernPortfolio() {
                                                     children: "Disponibilité"
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 384,
+                                                    lineNumber: 387,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1787,19 +1787,19 @@ function ModernPortfolio() {
                                                     children: "Actuellement disponible pour de nouveaux projets freelance. Temps de réponse habituel : 24h."
                                                 }, void 0, false, {
                                                     fileName: "[project]/portfolio.tsx",
-                                                    lineNumber: 385,
+                                                    lineNumber: 388,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 383,
+                                            lineNumber: 386,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 366,
+                                    lineNumber: 369,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1810,12 +1810,12 @@ function ModernPortfolio() {
                                                 children: "Envoyez-moi un message"
                                             }, void 0, false, {
                                                 fileName: "[project]/portfolio.tsx",
-                                                lineNumber: 393,
+                                                lineNumber: 396,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 392,
+                                            lineNumber: 395,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1829,20 +1829,20 @@ function ModernPortfolio() {
                                                                 placeholder: "Prénom"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/portfolio.tsx",
-                                                                lineNumber: 398,
+                                                                lineNumber: 401,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                                                                 placeholder: "Nom"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/portfolio.tsx",
-                                                                lineNumber: 399,
+                                                                lineNumber: 402,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/portfolio.tsx",
-                                                        lineNumber: 397,
+                                                        lineNumber: 400,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1850,14 +1850,14 @@ function ModernPortfolio() {
                                                         type: "email"
                                                     }, void 0, false, {
                                                         fileName: "[project]/portfolio.tsx",
-                                                        lineNumber: 401,
+                                                        lineNumber: 404,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                                                         placeholder: "Sujet"
                                                     }, void 0, false, {
                                                         fileName: "[project]/portfolio.tsx",
-                                                        lineNumber: 402,
+                                                        lineNumber: 405,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -1865,7 +1865,7 @@ function ModernPortfolio() {
                                                         rows: 5
                                                     }, void 0, false, {
                                                         fileName: "[project]/portfolio.tsx",
-                                                        lineNumber: 403,
+                                                        lineNumber: 406,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1873,41 +1873,41 @@ function ModernPortfolio() {
                                                         children: "Envoyer le message"
                                                     }, void 0, false, {
                                                         fileName: "[project]/portfolio.tsx",
-                                                        lineNumber: 404,
+                                                        lineNumber: 407,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/portfolio.tsx",
-                                                lineNumber: 396,
+                                                lineNumber: 399,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/portfolio.tsx",
-                                            lineNumber: 395,
+                                            lineNumber: 398,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/portfolio.tsx",
-                                    lineNumber: 391,
+                                    lineNumber: 394,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/portfolio.tsx",
-                            lineNumber: 365,
+                            lineNumber: 368,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/portfolio.tsx",
-                    lineNumber: 357,
+                    lineNumber: 360,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/portfolio.tsx",
-                lineNumber: 356,
+                lineNumber: 359,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -1919,17 +1919,17 @@ function ModernPortfolio() {
                         children: "© 2025 Bryan Garrix. Tous droits réservés. Fait avec ❤️ et Next.js."
                     }, void 0, false, {
                         fileName: "[project]/portfolio.tsx",
-                        lineNumber: 415,
+                        lineNumber: 418,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/portfolio.tsx",
-                    lineNumber: 414,
+                    lineNumber: 417,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/portfolio.tsx",
-                lineNumber: 413,
+                lineNumber: 416,
                 columnNumber: 7
             }, this)
         ]
