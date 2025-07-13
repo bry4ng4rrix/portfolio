@@ -13,6 +13,8 @@ import Link from "next/link"
 import TechStack from "./tech-stack"
 import { Typewriter } from 'react-simple-typewriter';
 import {motion } from 'framer-motion'
+import { SmoothScrollButton } from "./components/ui/SmoothScrollButton"
+
 
 export default function ModernPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -75,23 +77,23 @@ export default function ModernPortfolio() {
   ]
   const nav = [
     {
-      link : "#home",
+      link : "home",
       nom : "Acceuil"
     },
     {
-      link : "#about",
+      link : "about",
       nom : " À propos"
     },
     {
-      link : "#services",
+      link : "services",
       nom : "Services"
     },
     {
-      link : "#projects",
+      link : "projects",
       nom : "Projets"
     },
     {
-      link : "#contact",
+      link : "contact",
       nom : "Contact"
     }
   ]
@@ -114,9 +116,7 @@ export default function ModernPortfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               key={index}>
-             <Link  href={nav.link} className="hover:text-blue-600 transition-colors">
-                {nav.nom}
-             </Link>
+             <SmoothScrollButton to={nav.link} >{nav.nom}</SmoothScrollButton>
               </motion.div> 
              ))}
                <ThemeToggle />
@@ -187,11 +187,11 @@ export default function ModernPortfolio() {
               
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg"  className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg"  className="bg-blue-600 text-white hover:bg-blue-700">
                  <a href="/#projects">Voir mes projets</a>
               </Button>
-              <Button size="lg" variant="outline">
-                Télécharger CV
+              <Button size="lg" variant="outline" className="border-foreground ">
+                <a href="/cv.pdf" download>Télécharger CV</a>
               </Button>
             </div>
             <div className="flex justify-center space-x-6 mt-8">
@@ -331,16 +331,16 @@ export default function ModernPortfolio() {
                       </Badge>
                     ))}
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 text-foreground">
                     <Button size="sm" variant="outline" asChild>
                       <Link href={project.github}>
                         <Github className="w-4 h-4 mr-2" />
                         Code
                       </Link>
                     </Button>
-                    <Button size="sm" asChild>
+                    <Button size="sm" asChild >
                       <Link href={project.demo}>
-                        <ExternalLink className="w-4 h-4 mr-2" />
+                        <ExternalLink className="w-4 h-4 mr-2 text-foreground" />
                         Demo
                       </Link>
                     </Button>
