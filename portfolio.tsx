@@ -25,11 +25,11 @@ export default function ModernPortfolio() {
 
   const projects = [
     {
-      title: "Dashboard Analytics",
-      description: "Tableau de bord avec Django REST API et interface React moderne",
-      image: "/placeholder.svg?height=200&width=300",
-      tags: ["React", "Django", "REST API", "MySQL", "Tailwind"],
-      github: "#",
+      title: "E-pharma",
+      description: "Une plateforme web moderne conçue pour optimiser la gestion d’une pharmacie communautaire tout en respectant les réglementations en vigueur. Elle facilite l’organisation des ventes, des employés et des conseils produits.",
+      image: "/mahquafy.png?height=200&width=300",
+      tags: ["React", "Django", "REST API", "Sqlite", "Tailwind" ,"Material-UI"],
+      github: "https://github.com/bry4ng4rrix/E-pharma",
       demo: "#",
     },
     {
@@ -308,14 +308,14 @@ export default function ModernPortfolio() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={index} className="overflow-hidden hover:shadow-lg text-slate-700 transition-shadow">
                 <div className="relative">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     width={300}
                     height={200}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover p-2 rounded-xl"
                   />
                 </div>
                 <CardHeader>

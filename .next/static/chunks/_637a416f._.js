@@ -547,17 +547,18 @@ function ModernPortfolio() {
     ];
     const projects = [
         {
-            title: "Dashboard Analytics",
-            description: "Tableau de bord avec Django REST API et interface React moderne",
-            image: "/placeholder.svg?height=200&width=300",
+            title: "E-pharma",
+            description: "Une plateforme web moderne conçue pour optimiser la gestion d’une pharmacie communautaire tout en respectant les réglementations en vigueur. Elle facilite l’organisation des ventes, des employés et des conseils produits.",
+            image: "/mahquafy.png?height=200&width=300",
             tags: [
                 "React",
                 "Django",
                 "REST API",
-                "MySQL",
-                "Tailwind"
+                "Sqlite",
+                "Tailwind",
+                "Material-UI"
             ],
-            github: "#",
+            github: "https://github.com/bry4ng4rrix/E-pharma",
             demo: "#"
         },
         {
@@ -1309,7 +1310,7 @@ function ModernPortfolio() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
                             children: projects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                                    className: "overflow-hidden hover:shadow-lg transition-shadow",
+                                    className: "overflow-hidden hover:shadow-lg text-slate-700 transition-shadow",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "relative",
@@ -1318,7 +1319,7 @@ function ModernPortfolio() {
                                                 alt: project.title,
                                                 width: 300,
                                                 height: 200,
-                                                className: "w-full h-48 object-cover"
+                                                className: "w-full h-48 object-cover p-2 rounded-xl"
                                             }, void 0, false, {
                                                 fileName: "[project]/portfolio.tsx",
                                                 lineNumber: 313,
