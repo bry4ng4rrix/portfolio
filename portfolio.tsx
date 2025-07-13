@@ -1,4 +1,5 @@
 "use client"
+import { ThemeToggle } from "./components/ThemeToggle"
 
 import { useState } from "react"
 import { Button } from "./components/ui/button"
@@ -96,9 +97,9 @@ export default function ModernPortfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-teal-50/50 text-slate-700">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md border-b-1 border-dashed  z-50">
+      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md border-b-1  border-foreground  z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -106,7 +107,7 @@ export default function ModernPortfolio() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8 text-slate-700 ">
+            <div className="hidden md:flex space-x-8 text-foreground ">
              {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -118,7 +119,7 @@ export default function ModernPortfolio() {
              </Link>
               </motion.div> 
              ))}
-              
+               <ThemeToggle />
             
             </div>
 
@@ -160,7 +161,7 @@ export default function ModernPortfolio() {
                 alt="Profile"
                 width={150}
                 height={150}
-                className="rounded-full mx-auto border-4 border-blue-600"
+                className="rounded-full mx-auto shadow-2xl border-4 border-blue-600"
               />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -308,7 +309,7 @@ export default function ModernPortfolio() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg text-slate-700 transition-shadow">
+              <Card key={index} className="overflow-hidden hover:shadow-lg text-foreground transition-shadow">
                 <div className="relative">
                   <Image
                     src={project.image || "/placeholder.svg"}
