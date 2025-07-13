@@ -109,7 +109,7 @@ export default function ModernPortfolio() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8 text-foreground ">
+            <div className="hidden md:flex space-x-8 text-foreground  ">
              {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -164,7 +164,7 @@ export default function ModernPortfolio() {
                 className="rounded-full mx-auto shadow-2xl border-4 border-blue-600"
               />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-caption font-bold mb-6">
               Salut, je suis{" "}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Bryan Garrix
@@ -339,8 +339,8 @@ export default function ModernPortfolio() {
                       </Link>
                     </Button>
                     <Button size="sm" asChild >
-                      <Link href={project.demo}>
-                        <ExternalLink className="w-4 h-4 mr-2 text-foreground" />
+                      <Link href={project.demo} className="text-white">
+                        <ExternalLink className="w-4 h-4 mr-2 text-white" />
                         Demo
                       </Link>
                     </Button>
@@ -401,7 +401,7 @@ export default function ModernPortfolio() {
                   <Input placeholder="Email" type="email" />
                   <Input placeholder="Sujet" />
                   <Textarea placeholder="Votre message..." rows={5} />
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">Envoyer le message</Button>
+                  <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">Envoyer le message</Button>
                 </form>
               </CardContent>
             </Card>

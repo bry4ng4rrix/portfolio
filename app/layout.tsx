@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono ,Anek_Telugu} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes"
 const geistSans = Geist({
@@ -11,6 +11,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const AnekTelugu = Anek_Telugu({
+  variable: "--font-caption",
+  subsets: ["latin"],
+});
+
+
 
 export const metadata: Metadata = {
   title: "Bryan Garrix , Fullstack developper",
@@ -25,11 +32,11 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable , AnekTelugu.className} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

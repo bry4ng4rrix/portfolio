@@ -20,7 +20,7 @@ export function SmoothScrollButton({ to, children }: SmoothScrollButtonProps) {
 
   return (
     <a href={`#${to}`} onClick={handleScroll} >
-      <Button variant="ghost" className="hover:text-blue-600 transition-colors">{children}</Button>
+      <Button variant="ghost" className="hover:text-blue-600 transition-colors text-lg">{children}</Button>
     </a>
   )
 }

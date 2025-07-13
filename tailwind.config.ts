@@ -8,7 +8,11 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{
+        caption : ["var(--font-caption)"],
+      }
+    },
   },
   plugins: [],
 }

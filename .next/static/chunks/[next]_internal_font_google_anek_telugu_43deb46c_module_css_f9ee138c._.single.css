@@ -1,0 +1,20 @@
+/* [next]/internal/font/google/anek_telugu_43deb46c.module.css [app-client] (css) */
+@font-face {
+  font-family: Anek Telugu Fallback;
+  src: local(Arial);
+  ascent-override: 94.96%;
+  descent-override: 63.31%;
+  line-gap-override: 0.0%;
+  size-adjust: 94.77%;
+}
+
+.anek_telugu_43deb46c-module__X7zSbG__className {
+  font-family: Anek Telugu, Anek Telugu Fallback;
+  font-style: normal;
+}
+
+.anek_telugu_43deb46c-module__X7zSbG__variable {
+  --font-caption: "Anek Telugu", "Anek Telugu Fallback";
+}
+
+/*# sourceMappingURL=%5Bnext%5D_internal_font_google_anek_telugu_43deb46c_module_css_f9ee138c._.single.css.map*/
