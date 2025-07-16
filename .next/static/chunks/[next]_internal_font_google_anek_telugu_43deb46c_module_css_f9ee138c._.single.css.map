@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[next]/internal/font/google/anek_telugu_43deb46c.module.css"],"sourcesContent":["@font-face {\n    font-family: 'Anek Telugu Fallback';\n    src: local(\"Arial\");\n    ascent-override: 94.96%;\ndescent-override: 63.31%;\nline-gap-override: 0.00%;\nsize-adjust: 94.77%;\n\n}\n.className {\n    font-family: 'Anek Telugu', 'Anek Telugu Fallback';\n    font-style: normal;\n\n}\n.variable {\n    --font-caption: 'Anek Telugu', 'Anek Telugu Fallback';\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;AAKA","ignoreList":[0]}}]
+}
