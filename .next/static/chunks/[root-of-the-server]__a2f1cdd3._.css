@@ -188,7 +188,6 @@
     --color-pink-200: oklch(89.9% .061 343.231);
     --color-pink-800: oklch(45.9% .187 3.815);
     --color-pink-900: oklch(40.8% .153 2.432);
-    --color-slate-700: oklch(37.2% .044 257.287);
     --color-gray-300: oklch(87.2% .01 258.338);
     --color-gray-400: oklch(70.7% .022 261.325);
     --color-gray-700: oklch(37.3% .034 259.733);
@@ -838,12 +837,6 @@
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
   }
 
-  :where(.space-x-1 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   :where(.space-x-2 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
@@ -862,34 +855,10 @@
     margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  :where(.space-x-5 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 5) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   :where(.space-x-6 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
     margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  :where(.space-x-8 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  :where(.space-x-10 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  :where(.space-x-21 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 21) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 21) * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .self-start {
@@ -941,11 +910,6 @@
     border-width: 1px;
   }
 
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-
   .border-4 {
     border-style: var(--tw-border-style);
     border-width: 4px;
@@ -956,7 +920,7 @@
     border-top-width: 1px;
   }
 
-  .border-b, .border-b-1 {
+  .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
@@ -1075,10 +1039,6 @@
 
   .bg-purple-100 {
     background-color: var(--color-purple-100);
-  }
-
-  .bg-ring {
-    background-color: var(--ring);
   }
 
   .bg-secondary {
@@ -1356,10 +1316,6 @@
 
   .text-secondary-foreground {
     color: var(--secondary-foreground);
-  }
-
-  .text-slate-700 {
-    color: var(--color-slate-700);
   }
 
   .text-transparent {
@@ -1897,12 +1853,6 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:px-3 {
-      padding-inline: calc(var(--spacing) * 3);
-    }
-  }
-
-  @media (width >= 40rem) {
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
     }
@@ -1987,12 +1937,6 @@
   @media (width >= 64rem) {
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-
-  @media (width >= 64rem) {
-    .lg\:px-5 {
-      padding-inline: calc(var(--spacing) * 5);
     }
   }
 
@@ -2332,8 +2276,8 @@
 
 :root {
   --radius: .65rem;
-  --background: oklch(94.431% .01395 219.971);
-  --foreground: oklch(.141 .005 285.823);
+  --background: oklch(94.29% .02101 232.322);
+  --foreground: oklch(14.138% .06872 273.27);
   --card: oklch(1 0 0);
   --card-foreground: oklch(.141 .005 285.823);
   --popover: oklch(1 0 0);
@@ -2366,8 +2310,8 @@
 }
 
 .dark {
-  --background: oklch(.141 .005 285.823);
-  --foreground: oklch(.985 0 0);
+  --background: oklch(19.267% .03043 227.424);
+  --foreground: oklch(94.358% .00975 273.336);
   --card: oklch(.21 .006 285.885);
   --card-foreground: oklch(.985 0 0);
   --popover: oklch(.21 .006 285.885);
