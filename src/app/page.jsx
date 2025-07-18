@@ -373,7 +373,7 @@ const portfolio = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-600" />
-                  <span>bryanmfb4@email.com</span>
+                  <span>bryanmfb4@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Github className="w-5 h-5 text-blue-600" />
