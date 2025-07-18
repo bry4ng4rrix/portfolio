@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Mail, ExternalLink, Menu, X, Code, Palette, Smartphone, Globe } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, Menu, X, Code, Palette, Smartphone, Globe ,ChevronsLeftRightEllipsis} from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import {motion } from 'framer-motion'
@@ -100,15 +100,15 @@ const portfolio = () => {
   return (
       <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md border-b-1  border-foreground  z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md   z-50">
+        <div className="max-w-7xl mx-auto ">
+          <div className="flex justify-between items-center py-2">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              BG Dev
+            <ChevronsLeftRightEllipsis  />  BG Dev
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8 text-foreground  ">
+            <div className="hidden md:flex space-x-2 text-foreground  ">
              {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -130,8 +130,9 @@ const portfolio = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t text-slate-700">
+            <div className="md:hidden py-4 border-t text-foreground">
               <div className="flex flex-col space-y-4 items-center">
+                 <ThemeToggle />
                {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -143,6 +144,8 @@ const portfolio = () => {
              </Link>
               </motion.div> 
              ))}
+              
+
                
               </div>
             </div>
@@ -186,15 +189,15 @@ const portfolio = () => {
               
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg"  className="bg-blue-600 text-white hover:bg-blue-700">
-               <a href="#projects">Voir mes projets</a>
+              <Button size="lg"  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:bg-ring ">
+               <a href="#projects" >Voir mes projets</a>
 
               </Button>
-                <a href="/cv.pdf" download>
-              <Button size="lg" variant="outline" className="border-foreground ">
-              Télécharger CV
+                
+              <Button size="lg" variant="outline" className="border-foreground hover:bg-ring">
+              <a href="/cv.pdf" download>Télécharger CV</a>
               </Button>
-              </a>
+              
             </div>
             <div className="flex justify-center space-x-6 mt-8">
               <Link href="https://github.com/bry4ng4rrix" className="text-muted-foreground hover:text-blue-600 transition-colors">
