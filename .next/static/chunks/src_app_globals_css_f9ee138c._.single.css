@@ -1759,6 +1759,12 @@
   }
 
   @media (width >= 40rem) {
+    .sm\:px-2 {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+
+  @media (width >= 40rem) {
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
     }
