@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Mail, ExternalLink, Menu, X, Code, Palette, Smartphone, Globe ,ChevronsLeftRightEllipsis} from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, Menu, X, Code, Palette, Smartphone, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import {motion } from 'framer-motion'
@@ -100,15 +100,15 @@ const portfolio = () => {
   return (
       <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md   z-50">
+      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md justify-center items-center z-50">
         <div className="max-w-7xl mx-auto ">
           <div className="flex justify-between items-center py-2">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            <ChevronsLeftRightEllipsis  />  BGarrix
+             BGarrix
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex  text-foreground  ">
+            <div className="hidden md:flex justify-center items-center text-foreground  ">
              {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
