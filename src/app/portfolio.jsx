@@ -100,7 +100,7 @@ const portfolio = () => {
   return (
       <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md border-b-1  border-foreground  z-50">
+      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md   border-foreground  z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -108,14 +108,14 @@ const portfolio = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8 text-foreground  ">
+            <div className="hidden md:flex space-x-3 text-foreground  ">
              {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               key={index}>
-             <SmoothScrollButton to={nav.link} >{nav.nom}</SmoothScrollButton>
+             <SmoothScrollButton   to={nav.link} >{nav.nom}</SmoothScrollButton>
               </motion.div> 
              ))}
                <ThemeToggle />
@@ -130,20 +130,21 @@ const portfolio = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t text-slate-700">
+            <div className="md:hidden py-4 border-t text-foreground">
               <div className="flex flex-col space-y-4 items-center">
+                <ThemeToggle />
+
                {nav.map((nav, index) => (
               <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               key={index}>
-             <Link  href={nav.link} className="hover:text-blue-600 transition-colors">
-                {nav.nom}
-             </Link>
+            <SmoothScrollButton   to={nav.link} >{nav.nom}</SmoothScrollButton>
+              
+
               </motion.div> 
              ))}
-               
               </div>
             </div>
           )}
@@ -190,11 +191,12 @@ const portfolio = () => {
                <a href="#projects">Voir mes projets</a>
 
               </Button>
-                <a href="/cv.pdf" download>
+             
+                
               <Button size="lg" variant="outline" className="border-foreground ">
-              Télécharger CV
+            <a href="/cv.pdf" download>Télécharger CV</a>  
               </Button>
-              </a>
+              
             </div>
             <div className="flex justify-center space-x-6 mt-8">
               <Link href="https://github.com/bry4ng4rrix" className="text-muted-foreground hover:text-blue-600 transition-colors">
