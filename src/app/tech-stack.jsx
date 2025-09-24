@@ -10,7 +10,7 @@ export default function TechStack() {
     },
     {
       category: "Backend",
-      technologies: ["Python", "Django", "REST Framework", "PHP"],
+      technologies: ["Python", "Django", "Fastapi","REST Framework", "PHP"],
       color: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
     },
     {
