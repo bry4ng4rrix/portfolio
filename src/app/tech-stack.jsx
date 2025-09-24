@@ -15,7 +15,7 @@ export default function TechStack() {
     },
     {
       category: "Base de Données",
-      technologies: ["MySQL", "SQLite"],
+      technologies: ["MySQL","PostgreSQL", "SQLite"],
       color: "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
     },
     {
@@ -26,6 +26,11 @@ export default function TechStack() {
     {
       category: "Environnement & Outils",
       technologies: ["Linux", "venv", "Thunder Client", "Postman"],
+      color: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
+    },
+    {
+      category: "Autres",
+      technologies: ["Deejay", "Adobe Premiere", "GSM Repair", "Pentesting"],
       color: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
     },
   ]
