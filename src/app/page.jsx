@@ -68,7 +68,7 @@ const portfolio = () => {
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Développement Backend",
-      description: "API-REST avec Python/Django et PHP pour des solutions robustes",
+      description: "API-REST avec Python/Django ou Python/Fastapi et PHP pour des solutions robustes",
     },
     {
       icon: <Palette className="w-8 h-8" />,
@@ -296,9 +296,9 @@ const portfolio = () => {
                   <div className="mx-auto mb-4 p-3 bg-blue-100 dark:bg-blue-900 rounded-full w-fit">{service.icon}</div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                {/* <CardContent>
                   <CardDescription>{service.description}</CardDescription>
-                </CardContent>
+                </CardContent> */}
               </Card>
             ))}
           </div>
