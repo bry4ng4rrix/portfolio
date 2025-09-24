@@ -145,9 +145,7 @@ const portfolio = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               key={index}>
-             <Link  href={nav.link} className="hover:text-blue-600 transition-colors">
-                {nav.nom}
-             </Link>
+             <SmoothScrollButton to={nav.link} >{nav.nom}</SmoothScrollButton>
               </motion.div> 
              ))}
               
