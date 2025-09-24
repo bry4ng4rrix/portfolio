@@ -112,8 +112,8 @@ const portfolio = () => {
             <Image
               src="/logo.png"
               alt="Profile"
-              width={70}
-              height={70}
+              width={60}
+              height={60}
             />
             {/* <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
              BGarrix
