@@ -46,7 +46,7 @@ const portfolio = () => {
     {
       title: "E-Vazo API",
       description: "Une plateforme musicale moderne permettant aux artistes de partager leur musique (gratuite ou payante) et aux clients d'acheter, écouter et télécharger des morceaux via un système de codes de paiement locaux.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/evazo.png?height=200&width=300",
       tags: ["Fastapi", "Python", "SQLite" ,"JWT"],
       github: "https://github.com/bry4ng4rrix/e-vazo",
       demo: "https://github.com/bry4ng4rrix/e-vazo",
