@@ -5,8 +5,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Github, Linkedin, Mail, ExternalLink, Menu, X, Code, Palette, Smartphone, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -54,7 +52,7 @@ const portfolio = () => {
     {
       title: "API de Messagerie en Temps Réel",
       description: "Une API FastAPI complète pour un système de messagerie en temps réel avec WebSocket et authentification JWT.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/chat.png?height=200&width=300",
       tags: ["Fastapi", "Python", "SQLite" ,"JWT"],
       github: "https://github.com/bry4ng4rrix/fastapi_chat",
       demo: "https://github.com/bry4ng4rrix/fastapi_chat",
