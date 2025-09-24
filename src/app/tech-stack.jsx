@@ -31,7 +31,7 @@ export default function TechStack() {
     {
       category: "Autres",
       technologies: ["Deejay", "Adobe Premiere", "GSM Repair", "Pentesting"],
-      color: "bg-yellow-100 text-yellow-800 dark:bg-orange-900 dark:text-orange-200",
+      color: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
     },
   ]
 
