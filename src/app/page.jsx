@@ -109,9 +109,15 @@ const portfolio = () => {
       <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md justify-center items-center z-50">
         <div className="max-w-7xl mx-auto ">
           <div className="flex px-3 justify-between items-center py-2">
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <Image
+              src={logo}
+              alt="Profile"
+              width={50}
+              height={50}
+            />
+            {/* <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
              BGarrix
-            </div>
+            </div> */}
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex justify-center items-center text-foreground  ">
