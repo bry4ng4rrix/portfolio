@@ -26,22 +26,6 @@ const portfolio = () => {
 
   const projects = [
     {
-      title: "E-pharma",
-      description: "Une plateforme web moderne conçue pour optimiser la gestion d’une pharmacie communautaire tout en respectant les réglementations en vigueur. Elle facilite l’organisation des ventes, des employés et des conseils produits.",
-      image: "/mahquafy.png?height=200&width=300",
-      tags: ["React", "Django", "REST API", "Sqlite", "Tailwind" ,"Material-UI"],
-      github: "https://github.com/bry4ng4rrix/E-pharma",
-      demo: "#",
-    },
-    {
-      title: "G-blog",
-      description: "Une application de blog moderne combinant Next.js pour une interface utilisateur rapide et réactive, avec Django en backend pour une gestion robuste des contenus et des utilisateurs.",
-      image: "/blog.png?height=200&width=300",
-      tags: ["Next.js", "Python", "Django", "shadcn", "SQLite"],
-      github: "https://github.com/bry4ng4rrix/blog",
-      demo: "https://garrixblog.vercel.app/",
-    },
-    {
       title: "E-Vazo API",
       description: "Une plateforme musicale moderne permettant aux artistes de partager leur musique (gratuite ou payante) et aux clients d'acheter, écouter et télécharger des morceaux via un système de codes de paiement locaux.",
     image: "/evazo.png?height=200&width=300",
@@ -56,6 +40,22 @@ const portfolio = () => {
       tags: ["Fastapi", "Python", "SQLite" ,"JWT"],
       github: "https://github.com/bry4ng4rrix/fastapi_chat",
       demo: "https://github.com/bry4ng4rrix/fastapi_chat",
+    },
+    {
+      title: "E-pharma",
+      description: "Une plateforme web moderne conçue pour optimiser la gestion d’une pharmacie communautaire tout en respectant les réglementations en vigueur. Elle facilite l’organisation des ventes, des employés et des conseils produits.",
+      image: "/mahquafy.png?height=200&width=300",
+      tags: ["React", "Django", "REST API", "Sqlite", "Tailwind" ,"Material-UI"],
+      github: "https://github.com/bry4ng4rrix/E-pharma",
+      demo: "#",
+    },
+    {
+      title: "G-blog",
+      description: "Une application de blog moderne combinant Next.js pour une interface utilisateur rapide et réactive, avec Django en backend pour une gestion robuste des contenus et des utilisateurs.",
+      image: "/blog.png?height=200&width=300",
+      tags: ["Next.js", "Python", "Django", "shadcn", "SQLite"],
+      github: "https://github.com/bry4ng4rrix/blog",
+      demo: "https://garrixblog.vercel.app/",
     },
   ]
 
