@@ -110,10 +110,10 @@ const portfolio = () => {
         <div className="max-w-7xl mx-auto ">
           <div className="flex px-3 justify-between items-center py-2">
             <Image
-              src={logo}
+              src="/logo.png"
               alt="Profile"
-              width={50}
-              height={50}
+              width={70}
+              height={70}
             />
             {/* <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
              BGarrix
