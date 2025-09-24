@@ -44,12 +44,20 @@ const portfolio = () => {
       demo: "https://garrixblog.vercel.app/",
     },
     {
-      title: "Portfolio Designer",
-      description: "Site portfolio responsive avec design Figma intégré",
+      title: "E-Vazo API",
+      description: "Une plateforme musicale moderne permettant aux artistes de partager leur musique (gratuite ou payante) et aux clients d'acheter, écouter et télécharger des morceaux via un système de codes de paiement locaux.",
       image: "/placeholder.svg?height=200&width=300",
-      tags: ["React", "Material UI", "Figma", "Bootstrap"],
-      github: "#",
-      demo: "#",
+      tags: ["Fastapi", "Python", "SQLite" ,"JWT"],
+      github: "https://github.com/bry4ng4rrix/e-vazo",
+      demo: "https://github.com/bry4ng4rrix/e-vazo",
+    },
+    {
+      title: "API de Messagerie en Temps Réel",
+      description: "Une API FastAPI complète pour un système de messagerie en temps réel avec WebSocket et authentification JWT.",
+      image: "/placeholder.svg?height=200&width=300",
+      tags: ["Fastapi", "Python", "SQLite" ,"JWT"],
+      github: "https://github.com/bry4ng4rrix/fastapi_chat",
+      demo: "https://github.com/bry4ng4rrix/fastapi_chat",
     },
   ]
 
@@ -178,7 +186,7 @@ const portfolio = () => {
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
              
                <Typewriter
-            words={[' React/Next.js', 'Python/Django', 'Api-Rest']}
+            words={[' React/Next.js', 'Python/Django', 'Python/Fastapi', 'Api-Rest']}
             loop={5} // nombre de boucles ou `0` pour infini
             cursor
             cursorStyle='|'
@@ -229,7 +237,7 @@ const portfolio = () => {
               <h3 className="text-2xl font-semibold mb-4">Mon parcours</h3>
               <p className="text-muted-foreground mb-6">
                 Diplômé en informatique et spécialisé en développement full-stack. 
-                J’utilise des technologies modernes comme React, Next.js et Python-Django pour 
+                J’utilise des technologies modernes comme React, Next.js et Python-Django ou Python-FastAPI pour 
                 créer des applications web performantes et intuitives.
               </p>
               <p className="text-muted-foreground mb-6">
@@ -393,7 +401,7 @@ const portfolio = () => {
               </div>
             </div>
 
-            <Card className="rounded-sm ">
+            {/* <Card className="rounded-sm ">
               <CardHeader>
                 <CardTitle>Envoyez-moi un message</CardTitle>
               </CardHeader>
@@ -409,7 +417,7 @@ const portfolio = () => {
                   <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">Envoyer le message</Button>
                 </form>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
@@ -417,7 +425,7 @@ const portfolio = () => {
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t bg-muted/50">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-muted-foreground">© 2025 Bryan Garrix. Tous droits réservés. Fait avec ❤️ et Next.js.</p>
+          <p className="text-muted-foreground">© 2025 Bryan Garrix</p>
         </div>
       </footer>
     </div>
