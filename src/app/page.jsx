@@ -425,19 +425,6 @@ const portfolio = () => {
       </section>
 
 
-Compte Rendu : 
-
-Les pages actuellement accessibles avec l’ensemble des 
-consommations de l’API sont :
-/admin, /receptions, /recipes, /inventory, /purchase, 
-/product, /dashboard, /restaurant, /sales et /supplier.
-
-Au cours de cette étape, nous avons concentré nos efforts
- sur les modules Sales et Recipes. Nous avons corrigé les 
- erreurs rencontrées lors des appels fetch et procédé 
-à la stabilisation des anomalies affectant l’apparence et 
-l’affichage.
-
             
 
       {/* Footer */}
