@@ -424,6 +424,22 @@ const portfolio = () => {
         </div>
       </section>
 
+
+Compte Rendu : 
+
+Les pages actuellement accessibles avec l’ensemble des 
+consommations de l’API sont :
+/admin, /receptions, /recipes, /inventory, /purchase, 
+/product, /dashboard, /restaurant, /sales et /supplier.
+
+Au cours de cette étape, nous avons concentré nos efforts
+ sur les modules Sales et Recipes. Nous avons corrigé les 
+ erreurs rencontrées lors des appels fetch et procédé 
+à la stabilisation des anomalies affectant l’apparence et 
+l’affichage.
+
+            
+
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t bg-muted/50">
         <div className="max-w-7xl mx-auto text-center">
@@ -435,3 +451,5 @@ const portfolio = () => {
 }
 
 export default portfolio
+
+
