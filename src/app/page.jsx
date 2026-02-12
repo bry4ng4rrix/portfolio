@@ -57,6 +57,22 @@ const portfolio = () => {
       github: "https://github.com/bry4ng4rrix/blog",
       demo: "https://garrixblog.vercel.app/",
     },
+    {
+      title: "DS-Landing",
+      description: "Une plateforme web moderne et performante conçue pour offrir une expérience utilisateur fluide et réactive. Ce projet met en avant une interface épurée et une architecture optimisée pour le déploiement continu sur Vercel.",
+      image: "/ds.png?height=200&width=300",
+      tags: ["React.js", "shadcn"],
+      github: "https://github.com/bry4ng4rrix/Ds_Group",
+      demo: "https://dsgroup-pi.vercel.app/",
+    },
+    {
+      title: "PME ",
+      description: "Une application web spécialisée dans la gestion d'inventaire, conçue pour automatiser et optimiser le suivi des flux de marchandises. Ce projet permet une visibilité en temps réel sur les niveaux de produits, facilitant la prise de décision stratégique pour éviter les ruptures de stock ou le surstockage.",
+      image: "/pme.png?height=200&width=300",
+      tags: ["Next.js", "Python", "Fastapi", "shadcn", "SQLite"],
+      github: "https://github.com/bry4ng4rrix/Gestion_de_stock",
+      demo: "https://gestion-de-stock-sage.vercel.app/",
+    },
   ]
 
   const services = [
