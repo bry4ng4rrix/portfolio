@@ -43,6 +43,15 @@ const portfolio = () => {
 
   const projects = [
     {
+      title: "E-kajy Entana",
+      description:
+        " Une application web moderne et performante conçue pour faciliter la gestion des ventes et des stocks d'une entreprise de vente de produits alimentaires. Elle offre une interface intuitive pour suivre les transactions, gérer les inventaires et générer des rapports détaillés.",
+      image: "/ekajy.png?height=200&width=300",
+      tags: ["React", "Django", "REST API", "Sqlite", "Tailwind"],
+      github: "https://github.com/bry4ng4rrix/",
+      demo: "http://157.173.103.147:3000",
+    },
+    {
       title: "E-Vazo API",
       description:
         "Une plateforme musicale moderne permettant aux artistes de partager leur musique (gratuite ou payante) et aux clients d'acheter, écouter et télécharger des morceaux via un système de codes de paiement locaux.",
