@@ -29,6 +29,8 @@ import { SmoothScrollButton } from "@/components/module/SmoothScrollButton";
 import { Typewriter } from "react-simple-typewriter";
 import TechStack from "./tech-stack";
 
+import Particles from "@/components/module/part";
+
 const portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const skills = [
@@ -215,8 +217,21 @@ const portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative">
+        <div className="absolute inset-0 z-0">
+          <Particles
+            particleColors={["#ffffff"]}
+            particleCount={200}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center py-20">
             <div className="mb-8">
               <Image
