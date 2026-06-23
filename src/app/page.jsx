@@ -1,5 +1,6 @@
 "use client";
 import { ThemeToggle } from "@/components/module/ThemeToggle";
+import RippleGrid from "@/components/module/ripplegrid";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -371,7 +372,24 @@ const portfolio = () => {
           </div>
         </div>
       </section>
-
+      <div
+        style={{ position: "relative", height: "300px", overflow: "hidden" }}
+      >
+        <RippleGrid
+          enableRainbow={false}
+          gridColor="#5227FF"
+          rippleIntensity={0.05}
+          gridSize={10}
+          gridThickness={15}
+          mouseInteraction
+          mouseInteractionRadius={0.8}
+          opacity={1}
+          fadeDistance={1.5}
+          vignetteStrength={2}
+          glowIntensity={0.1}
+          gridRotation={0}
+        />
+      </div>
       {/* Services Section */}
       <section id="services" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
