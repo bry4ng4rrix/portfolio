@@ -32,6 +32,45 @@ import TechStack from "./tech-stack";
 
 import Particles from "@/components/module/part";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+const staggerContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+};
+
+const barFill = {
+  hidden: { width: 0 },
+  show: (level) => ({
+    width: `${level}%`,
+    transition: { duration: 1.1, ease: "easeOut", delay: 0.15 },
+  }),
+};
+
+function AnimatedPercent({ value }) {
+  const [display, setDisplay] = useState(0);
+  return (
+    <motion.span
+      viewport={{ once: true, margin: "-50px" }}
+      onViewportEnter={() => {
+        const start = performance.now();
+        const duration = 1100;
+        const step = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          setDisplay(Math.round(progress * value));
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }}
+    >
+      {display}%
+    </motion.span>
+  );
+}
+
 const portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const skills = [
@@ -161,18 +200,24 @@ const portfolio = () => {
     },
   ];
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
+      <div className="bg-ambient" aria-hidden="true">
+        <span />
+      </div>
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/50 backdrop-blur-md justify-center items-center z-50">
-        <div className="max-w-7xl mx-auto ">
-          <div className="flex px-3 justify-between items-center py-2">
-            <Image src="/logo.png" alt="Profile" width={60} height={60} />
-            {/* <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-             BGarrix jhj
-            </div> */}
+      <nav className="fixed top-3 inset-x-0 z-50 px-3">
+        <div className="max-w-5xl mx-auto glass-pill shadow-[0_8px_32px_-12px_rgba(0,0,0,0.25)]">
+          <div className="flex px-4 justify-between items-center py-2">
+            <Image
+              src="/logo.png"
+              alt="Profile"
+              width={44}
+              height={44}
+              className="rounded-full"
+            />
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex justify-center items-center text-foreground  ">
+            <div className="hidden md:flex justify-center items-center text-foreground gap-1">
               {nav.map((nav, index) => (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -185,14 +230,16 @@ const portfolio = () => {
                   </SmoothScrollButton>
                 </motion.div>
               ))}
-              <ThemeToggle />
+              <div className="ml-2 pl-2 border-l border-border">
+                <ThemeToggle />
+              </div>
             </div>
 
             {/* Mobile menu button */}
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="md:hidden rounded-full"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
@@ -205,7 +252,7 @@ const portfolio = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t text-foreground">
+            <div className="md:hidden py-4 border-t border-border text-foreground">
               <div className="flex flex-col space-y-4 items-center">
                 <ThemeToggle />
                 {nav.map((nav, index) => (
@@ -227,36 +274,36 @@ const portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative">
+      <section id="home" className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative">
         <div className="absolute inset-0 z-0">
           <Particles
-            particleColors={["#ffffff"]}
-            particleCount={200}
+            particleColors={["#a78bfa", "#60a5fa"]}
+            particleCount={180}
             particleSpread={10}
             speed={0.1}
-            particleBaseSize={100}
+            particleBaseSize={90}
             moveParticlesOnHover
-            alphaParticles={false}
+            alphaParticles
             disableRotation={false}
             pixelRatio={1}
           />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center py-20">
+          <div className="   rounded-[2.5rem] text-center py-20 px-6">
             <div className="mb-8">
-              <Image
-                src="/bg.png?height=150&width=150"
-                alt="Profile"
-                width={150}
-                height={150}
-                className="rounded-full mx-auto shadow-2xl border-4 border-blue-600"
-              />
+              <div className="relative mx-auto w-[150px] h-[150px]">
+                <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-violet-500 via-fuchsia-400 to-blue-500 blur-md opacity-70" />
+                <Image
+                  src="/bg.png?height=150&width=150"
+                  alt="Profile"
+                  width={150}
+                  height={150}
+                  className="relative rounded-full mx-auto shadow-2xl border-4 border-background object-cover"
+                />
+              </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-caption font-bold mb-6">
-              Salut, je suis{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Bryan Garrix
-              </span>
+              Salut, je suis <span className="text-gradient">Bryan Garrix</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Développeur Full-Stack spécialisé en{" "}
@@ -280,7 +327,7 @@ const portfolio = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:bg-ring "
+                className="bg-gradient-to-r from-violet-600 to-blue-600 text-white shadow-lg shadow-violet-600/25 hover:shadow-violet-600/40 hover:opacity-95 transition-all"
               >
                 <a href="#projects">Voir mes projets</a>
               </Button>
@@ -288,31 +335,31 @@ const portfolio = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-foreground hover:bg-ring"
+                className="glass-pill border-border hover:bg-accent"
               >
                 <a href="/cv.pdf" download>
                   Télécharger CV
                 </a>
               </Button>
             </div>
-            <div className="flex justify-center space-x-6 mt-8">
+            <div className="flex justify-center gap-4 mt-8">
               <Link
                 href="https://github.com/bry4ng4rrix"
-                className="text-muted-foreground hover:text-blue-600 transition-colors"
+                className="glass-pill p-3 text-muted-foreground hover:text-primary hover:scale-110 transition-all"
               >
-                <Github className="w-6 h-6" />
+                <Github className="w-5 h-5" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/bryan-garrix-5a0b07258"
-                className="text-muted-foreground hover:text-blue-600 transition-colors"
+                className="glass-pill p-3 text-muted-foreground hover:text-primary hover:scale-110 transition-all"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-5 h-5" />
               </Link>
               <Link
                 href="https://bryanmfb4@gmail.com"
-                className="text-muted-foreground hover:text-blue-600 transition-colors"
+                className="glass-pill p-3 text-muted-foreground hover:text-primary hover:scale-110 transition-all"
               >
-                <Mail className="w-6 h-6" />
+                <Mail className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -320,7 +367,7 @@ const portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50">
+      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -332,7 +379,7 @@ const portfolio = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="glass-panel rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-semibold mb-4">Mon parcours</h3>
               <p className="text-muted-foreground mb-6">
@@ -345,33 +392,50 @@ const portfolio = () => {
                 Mon approche combine créativité et rigueur technique pour livrer
                 des projets qui dépassent les attentes.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">5+ années d'expérience</Badge>
-                <Badge variant="secondary">10+ projets réalisés</Badge>
-                <Badge variant="secondary">Freelance disponible</Badge>
-              </div>
+              <motion.div
+                className="flex flex-wrap gap-2"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: "-50px" }}
+              >
+                <motion.div variants={fadeUp}>
+                  <Badge variant="secondary">5+ années d'expérience</Badge>
+                </motion.div>
+                <motion.div variants={fadeUp}>
+                  <Badge variant="secondary">10+ projets réalisés</Badge>
+                </motion.div>
+                <motion.div variants={fadeUp}>
+                  <Badge variant="secondary">Freelance disponible</Badge>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold mb-6">Compétences</h3>
-              <motion.div className="space-y-4">
+              <motion.div
+                className="space-y-4"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 {skills.map((skill, index) => (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    key={index}
-                  >
+                  <motion.div variants={fadeUp} key={index}>
                     <div className="flex justify-between mb-2">
                       <span className="font-medium">{skill.name}</span>
                       <span className="text-muted-foreground">
-                        {skill.level}%
+                        <AnimatedPercent value={skill.level} />
                       </span>
                     </div>
-                    <div className="w-full bg-muted rounded-full h-2">
-                      <div
-                        className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
-                        style={{ width: `${skill.level}%` }}
+                    <div className="w-full bg-white/30 dark:bg-white/[0.06] rounded-full h-2 overflow-hidden">
+                      <motion.div
+                        className="bg-gradient-to-r from-violet-500 to-blue-500 h-2 rounded-full"
+                        variants={barFill}
+                        custom={skill.level}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, margin: "-50px" }}
                       />
                     </div>
                   </motion.div>
@@ -381,21 +445,19 @@ const portfolio = () => {
           </div>
         </div>
       </section>
-      <div
-        style={{ position: "relative", height: "300px", overflow: "hidden" }}
-      >
+      <div className="relative h-[260px] overflow-hidden rounded-3xl max-w-7xl mx-4 sm:mx-6 lg:mx-8 xl:mx-auto border border-border">
         <RippleGrid
           enableRainbow={false}
-          gridColor="#5227FF"
+          gridColor="#8b6cff"
           rippleIntensity={0.05}
           gridSize={10}
           gridThickness={15}
           mouseInteraction
           mouseInteractionRadius={0.8}
-          opacity={1}
+          opacity={0.8}
           fadeDistance={1.5}
           vignetteStrength={2}
-          glowIntensity={0.1}
+          glowIntensity={0.15}
           gridRotation={0}
         />
       </div>
@@ -412,24 +474,34 @@ const portfolio = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-80px" }}
+          >
             {services.map((service, index) => (
-              <Card
+              <motion.div
                 key={index}
-                className="text-center hover:shadow-lg transition-shadow"
+                variants={fadeUp}
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <CardHeader>
-                  <div className="mx-auto mb-4 p-3 bg-blue-100 dark:bg-blue-900 rounded-full w-fit">
-                    {service.icon}
-                  </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
-                </CardHeader>
-                {/* <CardContent>
-                  <CardDescription>{service.description}</CardDescription>
-                </CardContent> */}
-              </Card>
+                <Card className="glass-card text-center hover:shadow-xl transition-shadow h-full">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 p-3 bg-gradient-to-br from-violet-500/20 to-blue-500/20 border border-white/20 dark:border-white/10 text-primary rounded-full w-fit">
+                      {service.icon}
+                    </div>
+                    <CardTitle className="text-xl">{service.title}</CardTitle>
+                  </CardHeader>
+                  {/* <CardContent>
+                    <CardDescription>{service.description}</CardDescription>
+                  </CardContent> */}
+                </Card>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -437,7 +509,7 @@ const portfolio = () => {
       <TechStack />
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50">
+      <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Mes Projets</h2>
@@ -447,11 +519,22 @@ const portfolio = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-80px" }}
+          >
             {projects.map((project, index) => (
-              <Card
+              <motion.div
                 key={index}
-                className="overflow-hidden hover:shadow-lg text-foreground transition-shadow"
+                variants={fadeUp}
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
+              <Card
+                className="overflow-hidden hover:shadow-xl text-foreground transition-shadow h-full"
               >
                 <div className="relative">
                   <Image
@@ -459,7 +542,7 @@ const portfolio = () => {
                     alt={project.title}
                     width={300}
                     height={200}
-                    className="w-full h-48 object-cover p-2 rounded-xl"
+                    className="w-full h-48 object-cover p-2 rounded-2xl"
                   />
                 </div>
                 <CardHeader>
@@ -479,13 +562,22 @@ const portfolio = () => {
                     ))}
                   </div>
                   <div className="flex gap-2 text-foreground">
-                    <Button size="sm" variant="outline" asChild>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="glass-pill"
+                      asChild
+                    >
                       <Link href={project.github}>
                         <Github className="w-4 h-4 mr-2" />
                         Code
                       </Link>
                     </Button>
-                    <Button size="sm" asChild>
+                    <Button
+                      size="sm"
+                      className="bg-gradient-to-r from-violet-600 to-blue-600 text-white shadow-md shadow-violet-600/20 hover:opacity-90"
+                      asChild
+                    >
                       <Link href={project.demo} className="text-white">
                         <ExternalLink className="w-4 h-4 mr-2 text-white" />
                         Demo
@@ -494,8 +586,9 @@ const portfolio = () => {
                   </div>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -512,58 +605,44 @@ const portfolio = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">
-                Informations de contact
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-blue-600" />
-                  <span>bryanmfb4@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Github className="w-5 h-5 text-blue-600" />
-                  <span>github.com/bry4ng4rrix</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Linkedin className="w-5 h-5 text-blue-600" />
-                  <span>linkedin.com/in/bryan-garrix-5a0b07258</span>
-                </div>
+          <div className="glass-panel rounded-3xl p-8 md:p-12">
+            <h3 className="text-2xl font-semibold mb-6">
+              Informations de contact
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <span className="p-2 rounded-full bg-gradient-to-br from-violet-500/20 to-blue-500/20 border border-white/20 dark:border-white/10 text-primary">
+                  <Mail className="w-4 h-4" />
+                </span>
+                <span>bryanmfb4@gmail.com</span>
               </div>
-
-              <div className="mt-8">
-                <h4 className="text-lg font-semibold mb-4">Disponibilité</h4>
-                <p className="text-muted-foreground">
-                  Actuellement disponible pour de nouveaux projets freelance.
-                  Temps de réponse habituel : 24h.
-                </p>
+              <div className="flex items-center gap-3">
+                <span className="p-2 rounded-full bg-gradient-to-br from-violet-500/20 to-blue-500/20 border border-white/20 dark:border-white/10 text-primary">
+                  <Github className="w-4 h-4" />
+                </span>
+                <span>github.com/bry4ng4rrix</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="p-2 rounded-full bg-gradient-to-br from-violet-500/20 to-blue-500/20 border border-white/20 dark:border-white/10 text-primary">
+                  <Linkedin className="w-4 h-4" />
+                </span>
+                <span>linkedin.com/in/bryan-garrix-5a0b07258</span>
               </div>
             </div>
 
-            {/* <Card className="rounded-sm ">
-              <CardHeader>
-                <CardTitle>Envoyez-moi un message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <Input placeholder="Prénom" />
-                    <Input placeholder="Nom" />
-                  </div>
-                  <Input placeholder="Email" type="email" />
-                  <Input placeholder="Sujet" />
-                  <Textarea placeholder="Votre message..." rows={5} />
-                  <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">Envoyer le message</Button>
-                </form>
-              </CardContent>
-            </Card> */}
+            <div className="mt-8 pt-6 border-t border-border">
+              <h4 className="text-lg font-semibold mb-2">Disponibilité</h4>
+              <p className="text-muted-foreground">
+                Actuellement disponible pour de nouveaux projets freelance.
+                Temps de réponse habituel : 24h.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t bg-muted/50">
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground">© 2025 Bryan Garrix</p>
         </div>
