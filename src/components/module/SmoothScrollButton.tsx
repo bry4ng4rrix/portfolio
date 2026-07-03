@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 interface SmoothScrollButtonProps {
   to: string
@@ -20,7 +21,7 @@ export function SmoothScrollButton({ to, children }: SmoothScrollButtonProps) {
 
   return (
     <a href={`#${to}`} onClick={handleScroll} >
-      <Button variant="ghost" className="hover:text-blue-600 transition-colors text-sm">{children}</Button>
+      <Button variant="ghost" size="sm" className="hover:text-primary transition-colors text-sm">{children}</Button>
     </a>
   )
 }
