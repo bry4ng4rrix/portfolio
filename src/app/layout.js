@@ -67,6 +67,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
+    <head>
+    <meta name="google-site-verification" content="CoZ964I0ggNRDIKWX_Gm3bYiFLU772pNUhkBKmoCiTA" />
+    </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
