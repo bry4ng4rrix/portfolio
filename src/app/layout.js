@@ -12,7 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://bryangarrix.vercel.app";
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title:
     "Bryan Garrix - Développeur Full-Stack | React, Next.js, Django, FastAPI",
   description:
@@ -48,8 +52,10 @@ export const metadata = {
     description:
       "Développeur full-stack freelance spécialisé en React, Next.js, Python (Django, FastAPI) et API REST.",
     type: "website",
+    url: siteUrl,
+    siteName: "Bryan Garrix Portfolio",
     locale: "fr_FR",
-    images: ["/bg.png"],
+    images: [{ url: "/bg.png", width: 1200, height: 630, alt: "Bryan Garrix" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -61,7 +67,19 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+  // Set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in your .env to enable GSC
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    },
+  }),
 };
 
 export default function RootLayout({ children }) {
