@@ -45,13 +45,19 @@ export default function TechStack() {
     },
     {
       category: "Backend",
-      technologies: ["Python", "Django", "FastAPI", "Django REST Framework", "PHP"],
+      technologies: [
+        "Python",
+        "Django",
+        "FastAPI",
+        "Django REST Framework",
+        "PHP",
+      ],
       color:
         "bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 border-emerald-500/20",
     },
     {
       category: "Cross-Platform & Mobile",
-      technologies: ["Flutter"],
+      technologies: ["Flutter", "React Native"],
       color:
         "bg-cyan-500/10 text-cyan-600 dark:text-cyan-300 border-cyan-500/20",
     },
@@ -64,8 +70,7 @@ export default function TechStack() {
     {
       category: "DevOps & CI/CD",
       technologies: ["Git", "GitHub", "GitHub Actions", "Linux"],
-      color:
-        "bg-sky-500/10 text-sky-600 dark:text-sky-300 border-sky-500/20",
+      color: "bg-sky-500/10 text-sky-600 dark:text-sky-300 border-sky-500/20",
     },
     {
       category: "Design",
