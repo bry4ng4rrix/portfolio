@@ -312,6 +312,7 @@ const portfolio = () => {
               <Typewriter
                 words={[
                   " React/Next.js",
+                  "Flutter ",
                   "Python/Django",
                   "Python/Fastapi",
                   "Api-Rest",
@@ -533,59 +534,57 @@ const portfolio = () => {
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-              <Card
-                className="overflow-hidden hover:shadow-xl text-foreground transition-shadow h-full"
-              >
-                <div className="relative">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover p-2 rounded-2xl"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge
-                        key={tagIndex}
-                        variant="secondary"
-                        className="text-xs"
+                <Card className="overflow-hidden hover:shadow-xl text-foreground transition-shadow h-full">
+                  <div className="relative">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      width={300}
+                      height={200}
+                      className="w-full h-48 object-cover p-2 rounded-2xl"
+                    />
+                  </div>
+                  <CardHeader>
+                    <CardTitle>{project.title}</CardTitle>
+                    <CardDescription>{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.map((tag, tagIndex) => (
+                        <Badge
+                          key={tagIndex}
+                          variant="secondary"
+                          className="text-xs"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="flex gap-2 text-foreground">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="glass-pill"
+                        asChild
                       >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex gap-2 text-foreground">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="glass-pill"
-                      asChild
-                    >
-                      <Link href={project.github}>
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Link>
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="bg-gradient-to-r from-violet-600 to-blue-600 text-white shadow-md shadow-violet-600/20 hover:opacity-90"
-                      asChild
-                    >
-                      <Link href={project.demo} className="text-white">
-                        <ExternalLink className="w-4 h-4 mr-2 text-white" />
-                        Demo
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                        <Link href={project.github}>
+                          <Github className="w-4 h-4 mr-2" />
+                          Code
+                        </Link>
+                      </Button>
+                      <Button
+                        size="sm"
+                        className="bg-gradient-to-r from-violet-600 to-blue-600 text-white shadow-md shadow-violet-600/20 hover:opacity-90"
+                        asChild
+                      >
+                        <Link href={project.demo} className="text-white">
+                          <ExternalLink className="w-4 h-4 mr-2 text-white" />
+                          Demo
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
