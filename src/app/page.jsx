@@ -370,24 +370,14 @@ const portfolio = () => {
       {/* About Section */}
       <section id="about" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              À propos de moi
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Passionné par le développement web depuis plus de 5 ans, je crée
-              des solutions innovantes et performantes.
-            </p>
-          </div>
-
           <div className="glass-panel rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-semibold mb-4">Mon parcours</h3>
               <p className="text-muted-foreground mb-6">
                 Diplômé en informatique et spécialisé en développement
                 full-stack. J’utilise des technologies modernes comme React,
-                Next.js et Python-Django ou Python-FastAPI pour créer des
-                applications web performantes et intuitives.
+                Next.js , Flutter et Python-Django ou Python-FastAPI pour créer
+                des applications web performantes et intuitives.
               </p>
               <p className="text-muted-foreground mb-6">
                 Mon approche combine créativité et rigueur technique pour livrer
@@ -401,7 +391,7 @@ const portfolio = () => {
                 viewport={{ once: true, margin: "-50px" }}
               >
                 <motion.div variants={fadeUp}>
-                  <Badge variant="secondary">5+ années d'expérience</Badge>
+                  <Badge variant="secondary">2+ années d'expérience</Badge>
                 </motion.div>
                 <motion.div variants={fadeUp}>
                   <Badge variant="secondary">10+ projets réalisés</Badge>
