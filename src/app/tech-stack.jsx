@@ -84,7 +84,7 @@ export default function TechStack() {
             >
               <Card className="glass-card hover:shadow-xl transition-shadow h-full">
                 <CardHeader>
-                  <CardTitle className="text-xl text-center">
+                  <CardTitle className="text-xl text-center font-kode">
                     {category.category}
                   </CardTitle>
                 </CardHeader>
