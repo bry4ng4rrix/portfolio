@@ -6,8 +6,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Une classe par police : font-montserrat, font-geo, font-playwrite, font-kode */
+  --font-montserrat: var(--ff-montserrat), sans-serif;
+  --font-geo: var(--ff-geo), sans-serif;
+  --font-playwrite: var(--ff-playwrite), cursive;
+  --font-kode: var(--ff-kode), monospace;
+  /* Polices par défaut du site (body et <code>/<pre>) */
+  --font-sans: var(--ff-montserrat), sans-serif;
+  --font-mono: var(--ff-kode), monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);

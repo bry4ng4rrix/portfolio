@@ -1,15 +1,44 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geo,
+  Kode_Mono,
+  Montserrat,
+  Playwrite_BE_WAL_Guides,
+} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Chaque police expose une variable --ff-* consommée par globals.css,
+// qui en fait un utilitaire Tailwind (font-montserrat, font-geo, ...).
+
+// font-montserrat — police par défaut du site (variable 100-900, normal + italique)
+const montserrat = Montserrat({
+  variable: "--ff-montserrat",
   subsets: ["latin"],
+  style: ["normal", "italic"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// font-geo — police display (400, normal + italique)
+const geo = Geo({
+  variable: "--ff-geo",
   subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+// font-playwrite — police manuscrite (400 uniquement)
+const playwrite = Playwrite_BE_WAL_Guides({
+  variable: "--ff-playwrite",
+  weight: "400",
+  display: "swap",
+});
+
+// font-kode — police monospace (variable 400-700)
+const kodeMono = Kode_Mono({
+  variable: "--ff-kode",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const siteUrl =
@@ -89,7 +118,7 @@ export default function RootLayout({ children }) {
     <meta name="google-site-verification" content="CoZ964I0ggNRDIKWX_Gm3bYiFLU772pNUhkBKmoCiTA" />
     </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${montserrat.variable} ${geo.variable} ${playwrite.variable} ${kodeMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

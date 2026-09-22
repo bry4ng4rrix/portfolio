@@ -3,16 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
-
-const staggerContainer = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.12 } },
-};
+import { fadeUp, staggerContainer } from "./animations";
 
 const badgeStagger = {
   hidden: {},
@@ -34,8 +25,8 @@ export default function TechStack() {
       category: "Frontend",
       technologies: [
         "Next.js",
-        "React",
-        "JavaScript",
+        "React Native",
+        "Flutter",
         "Tailwind CSS",
         "Material UI",
         "shadcn/ui",
@@ -49,53 +40,18 @@ export default function TechStack() {
         "Python",
         "Django",
         "FastAPI",
-        "Django REST Framework",
         "PHP",
+        "Laravel",
+        "Node.js",
       ],
       color:
         "bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 border-emerald-500/20",
     },
     {
-      category: "Cross-Platform & Mobile",
-      technologies: ["Flutter", "React Native"],
-      color:
-        "bg-cyan-500/10 text-cyan-600 dark:text-cyan-300 border-cyan-500/20",
-    },
-    {
-      category: "Base de Données",
-      technologies: ["Supabase", "PostgreSQL", "MySQL", "SQLite"],
-      color:
-        "bg-violet-500/10 text-violet-600 dark:text-violet-300 border-violet-500/20",
-    },
-    {
-      category: "DevOps & CI/CD",
-      technologies: ["Git", "GitHub", "GitHub Actions", "Linux"],
-      color: "bg-sky-500/10 text-sky-600 dark:text-sky-300 border-sky-500/20",
-    },
-    {
-      category: "Design",
-      technologies: ["Figma", "Adobe XD", "Photoshop"],
-      color:
-        "bg-pink-500/10 text-pink-600 dark:text-pink-300 border-pink-500/20",
-    },
-    {
       category: "Environnement & Outils",
-      technologies: ["venv", "Thunder Client", "Postman", "VirtualBox", "Wine"],
+      technologies: ["Linux", "Docker", "Git", "Supabase", "Vps", "PostgreSQL"],
       color:
         "bg-orange-500/10 text-orange-600 dark:text-orange-300 border-orange-500/20",
-    },
-    {
-      category: "IDE & Éditeurs",
-      technologies: [
-        "Visual Studio Code",
-        "PyCharm",
-        "IntelliJ IDEA",
-        "Android Studio",
-        "Vim",
-        "Neovim",
-      ],
-      color:
-        "bg-amber-500/10 text-amber-600 dark:text-amber-300 border-amber-500/20",
     },
   ];
 
@@ -103,7 +59,7 @@ export default function TechStack() {
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-geo">
             Stack Technique
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
