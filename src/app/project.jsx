@@ -17,13 +17,32 @@ import { fadeUp, staggerContainer } from "./animations";
 
 const projects = [
   {
-    title: "E-kajy Entana",
+    title: "Smartphone.mg",
     description:
-      " Une application web moderne et performante conçue pour faciliter la gestion des ventes et des stocks d'une entreprise de vente de produits alimentaires. Elle offre une interface intuitive pour suivre les transactions, gérer les inventaires et générer des rapports détaillés.",
+      "une plateforme complète de gestion destinée à une boutique spécialisée dans la vente d’accessoires qui permet de centraliser et automatiser la gestion des produits, commandes, fournisseurs,livraisons, finances et performances commerciales depuis une interface unique.",
+    image: "/smartphone.png?height=200&width=300",
+    tags: ["Next.js", "Django", "Flutter"],
+    github: "",
+    demo: "",
+  },
+  {
+    title: "Valheri Wear",
+    description:
+      "Une plateforme de gestion dédiée à une boutique spécialisée dans la vente de vêtements et d’articles de mode. Elle permet de centraliser la gestion quotidienne de l'activité et de suivre l'ensemble du cycle commercial depuis l'approvisionnement jusqu'à la vente.",
     image: "/ekajy.png?height=200&width=300",
     tags: ["React", "Django", "REST API", "Sqlite", "Tailwind"],
     github: "https://github.com/bry4ng4rrix/",
     demo: "http://157.173.103.147:3000",
+  },
+
+  {
+    title: "DS-Landing",
+    description:
+      "Une plateforme web moderne et performante conçue pour offrir une expérience utilisateur fluide et réactive. Ce projet met en avant une interface épurée et une architecture optimisée pour le déploiement continu sur Vercel.",
+    image: "/ds.png?height=200&width=300",
+    tags: ["React.js", "shadcn"],
+    github: "https://github.com/bry4ng4rrix/Ds_Group",
+    demo: "https://dsgroup-pi.vercel.app/",
   },
   {
     title: "E-Vazo API",
@@ -60,24 +79,6 @@ const projects = [
     tags: ["Next.js", "Python", "Django", "shadcn", "SQLite"],
     github: "https://github.com/bry4ng4rrix/blog",
     demo: "https://garrixblog.vercel.app/",
-  },
-  {
-    title: "DS-Landing",
-    description:
-      "Une plateforme web moderne et performante conçue pour offrir une expérience utilisateur fluide et réactive. Ce projet met en avant une interface épurée et une architecture optimisée pour le déploiement continu sur Vercel.",
-    image: "/ds.png?height=200&width=300",
-    tags: ["React.js", "shadcn"],
-    github: "https://github.com/bry4ng4rrix/Ds_Group",
-    demo: "https://dsgroup-pi.vercel.app/",
-  },
-  {
-    title: "PME ",
-    description:
-      "Une application web spécialisée dans la gestion d'inventaire, conçue pour automatiser et optimiser le suivi des flux de marchandises. Ce projet permet une visibilité en temps réel sur les niveaux de produits, facilitant la prise de décision stratégique pour éviter les ruptures de stock ou le surstockage.",
-    image: "/pme.png?height=200&width=300",
-    tags: ["Next.js", "Python", "Fastapi", "shadcn", "SQLite"],
-    github: "https://github.com/bry4ng4rrix/Gestion_de_stock",
-    demo: "https://gestion-de-stock-sage.vercel.app/",
   },
 ];
 
