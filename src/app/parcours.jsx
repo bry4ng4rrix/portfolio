@@ -7,6 +7,12 @@ import { fadeSide, staggerContainer } from "./animations";
 export default function Parcours() {
   // Contenu provisoire : à remplacer par votre propre parcours
   const parcours = [
+{
+      year: "2020",
+      title: "Initiation à la cybersécurité",
+      description:
+        "Début d’apprentissage des fondamentaux de Linux et de la cybersécurité, avec une initiation à la défense des systèmes, à l’analyse de sécurité et aux tests d’intrusion .",
+    },
     {
       year: "2025",
       title: "Obtention de la licence",
