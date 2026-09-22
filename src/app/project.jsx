@@ -158,20 +158,6 @@ export function Project() {
                         Code
                       </Link>
                     </Button>
-                    <Button
-                      size="sm"
-                      className="bg-gradient-to-r from-violet-600 to-blue-600 text-white shadow-md shadow-violet-600/20 hover:opacity-90"
-                      asChild
-                    >
-                      <Link
-                        href={project.demo}
-                        target="_blank"
-                        className="text-white"
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2 text-white" />
-                        Demo
-                      </Link>
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
