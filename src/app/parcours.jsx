@@ -14,13 +14,13 @@ export default function Parcours() {
         "Début d’apprentissage des fondamentaux de Linux et de la cybersécurité, avec une initiation à la défense des systèmes, à l’analyse de sécurité et aux tests d’intrusion .",
     },
     {
-      year: "2025 - Août",
+      year: "Août 2025",
       title: "Obtention de la licence",
       description:
         "Diplômé en informatique, puis spécialisation en développement web full-stack avec React, Django et FastAPI.",
     },
     {
-      year: "2025, Septembre - Decembre",
+      year: "Septembre - Decembre 2025",
       title: "Développeur Chez Ds Group",
       description:
         "Réalisation d'applications web sur mesure pour des clients : Gestion de restaurants (génération de recettes pour identifier les nouveaux ingrédients nécessaires), plateformes Selfikiosk",
