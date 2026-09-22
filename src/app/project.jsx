@@ -26,7 +26,7 @@ const projects = [
     demo: "",
   },
   {
-    title: "Smartphone Boutique",
+    title: "Smartphone.mg Boutique",
     description:
       "Une boutique en ligne dédiée aux clients d'un commerce d'accessoires téléphoniques, qui leur permet de parcourir le catalogue, suivre la disponibilité en temps réel, commander en ligne et suivre leurs commandes jusqu'à la livraison ou le retrait, depuis une interface unique.",
     image: "/smart.png?height=200&width=300",
