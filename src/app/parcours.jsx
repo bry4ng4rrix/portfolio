@@ -20,13 +20,13 @@ export default function Parcours() {
         "Diplômé en informatique, puis spécialisation en développement web full-stack avec React, Django et FastAPI.",
     },
     {
-      year: "Septembre - Decembre 2025",
+      year: "Septembre - Décembre 2025",
       title: "Développeur Chez Ds Group",
       description:
         "Réalisation d'applications web sur mesure pour des clients : Gestion de restaurants (génération de recettes pour identifier les nouveaux ingrédients nécessaires), plateformes Selfikiosk",
     },
     {
-      year: "Decembre 2025 - Mars 2026",
+      year: "Décembre 2025 - Mars 2026",
       title: "Analiste Kpi chez DMZ France",
       description:
         "Analyse des données et optimiser les campagnes publicitaires via Meta Business Manager, tout en assurant la gestion comptable sur Vantage.",
