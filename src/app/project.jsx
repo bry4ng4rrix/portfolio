@@ -17,10 +17,19 @@ import { fadeUp, staggerContainer } from "./animations";
 
 const projects = [
   {
-    title: "Smartphone.mg",
+    title: "Smartphone.mg Gerant",
     description:
       "une plateforme complète de gestion destinée à une boutique spécialisée dans la vente d’accessoires qui permet de centraliser et automatiser la gestion des produits, commandes, fournisseurs,livraisons, finances et performances commerciales depuis une interface unique.",
     image: "/smartphone.png?height=200&width=300",
+    tags: ["Next.js", "Django", "Flutter"],
+    github: "",
+    demo: "",
+  },
+  {
+    title: "Smartphone Boutique",
+    description:
+      "Une boutique en ligne dédiée aux clients d'un commerce d'accessoires téléphoniques, qui leur permet de parcourir le catalogue, suivre la disponibilité en temps réel, commander en ligne et suivre leurs commandes jusqu'à la livraison ou le retrait, depuis une interface unique.",
+    image: "/smart.png?height=200&width=300",
     tags: ["Next.js", "Django", "Flutter"],
     github: "",
     demo: "",
