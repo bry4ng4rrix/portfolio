@@ -7,23 +7,29 @@ import { fadeSide, staggerContainer } from "./animations";
 export default function Parcours() {
   // Contenu provisoire : à remplacer par votre propre parcours
   const parcours = [
-{
+    {
       year: "2020",
       title: "Initiation à la cybersécurité",
       description:
         "Début d’apprentissage des fondamentaux de Linux et de la cybersécurité, avec une initiation à la défense des systèmes, à l’analyse de sécurité et aux tests d’intrusion .",
     },
     {
-      year: "2025",
+      year: "2025 - Août",
       title: "Obtention de la licence",
       description:
         "Diplômé en informatique, puis spécialisation en développement web full-stack avec React, Django et FastAPI.",
     },
     {
-      year: "2025",
-      title: "Développeur freelance",
+      year: "2025, Septembre - Decembre",
+      title: "Développeur Chez Ds Group",
       description:
-        "Réalisation d'applications web sur mesure pour des clients : gestion de stock, plateformes e-commerce, restaurants.",
+        "Réalisation d'applications web sur mesure pour des clients : Gestion de restaurants (génération de recettes pour identifier les nouveaux ingrédients nécessaires), plateformes Selfikiosk",
+    },
+    {
+      year: "Decembre 2025 - Mars 2026",
+      title: "Analiste Kpi chez DMZ France",
+      description:
+        "Analyse des données et optimiser les campagnes publicitaires via Meta Business Manager, tout en assurant la gestion comptable sur Vantage.",
     },
     {
       year: "2026",
@@ -32,8 +38,8 @@ export default function Parcours() {
         "Montée en compétence sur Flutter et React Native pour concevoir des applications cross-platform.",
     },
     {
-      year: "2026",
-      title: "Developpeur Label technology",
+      year: "Avril 2026",
+      title: "Développeur Label technology",
       description:
         "Intégration dans l'équipe de Label Technology, une entreprise spécialisée dans le développement d'applications web et mobiles pour des clients variés.",
     },
