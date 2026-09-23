@@ -39,9 +39,17 @@ const projects = [
     description:
       "Une plateforme de gestion dédiée à une boutique spécialisée dans la vente de vêtements et d’articles de mode. Elle permet de centraliser la gestion quotidienne de l'activité et de suivre l'ensemble du cycle commercial depuis l'approvisionnement jusqu'à la vente.",
     image: "/ekajy.png?height=200&width=300",
-    tags: ["React", "Django", "REST API", "Sqlite", "Tailwind"],
+    tags: ["React", "Django", "REST API", "Tailwind"],
     github: "https://github.com/bry4ng4rrix/",
     demo: "http://157.173.103.147:3000",
+  },
+  {
+    title: "Appel d'Offre",
+    description:
+      "Une plateforme web moderne et performante conçue pour scrapper  des appels d'offres, permettant aux clients de trouver les opportunités d'affaires.",
+    image: "/offre.png?height=200&width=300",
+    tags: ["REACT", "FASTAPI", "Tailwind"],
+    github: "
   },
 
   {
