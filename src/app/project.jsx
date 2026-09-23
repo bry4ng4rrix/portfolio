@@ -146,19 +146,6 @@ export function Project() {
                       </Badge>
                     ))}
                   </div>
-                  <div className="flex gap-2 text-foreground">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="glass-pill"
-                      asChild
-                    >
-                      <Link href={project.github} target="_blank">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Link>
-                    </Button>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>
