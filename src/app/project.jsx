@@ -49,7 +49,7 @@ const projects = [
       "Une plateforme web moderne et performante conçue pour scrapper  des appels d'offres, permettant aux clients de trouver les opportunités d'affaires.",
     image: "/offre.png?height=200&width=300",
     tags: ["REACT", "FASTAPI", "Tailwind"],
-    github: "
+    github: "",
   },
 
   {
