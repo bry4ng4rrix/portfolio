@@ -166,13 +166,15 @@ export function Project() {
                 </CardContent>
                 {project.Lien && (
                   <CardContent>
-                    <Link
-                      href={project.Lien}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Voir le projet
-                    </Link>
+                    <Badge>
+                      <Link
+                        href={project.Lien}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Voir le projet
+                      </Link>
+                    </Badge>
                   </CardContent>
                 )}
               </Card>
