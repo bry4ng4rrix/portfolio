@@ -60,6 +60,14 @@ const projects = [
     github: "",
     Lien: "https://labeltechnology.mg/",
   },
+  {
+    title: "Ekoliko",
+    description:
+      "Une plateforme web moderne et performante conçue pour la gestion d'une école.",
+    image: "/ecole.png?height=200&width=300",
+    tags: ["Next.js", "Tailwind"],
+    github: "",
+  },
 
   {
     title: "DS-Landing",
