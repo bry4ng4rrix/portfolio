@@ -51,6 +51,15 @@ const projects = [
     tags: ["REACT", "FASTAPI", "Tailwind"],
     github: "",
   },
+  {
+    title: "Label Technology",
+    description:
+      "Un site vitrine d'entreprise dédié à la présentation de services numériques, de développement informatique et de solutions IT pour les professionnels. ",
+    image: "/label.png?height=200&width=300",
+    tags: ["Next.js", "Tailwind"],
+    github: "",
+    Lien: "https://labeltechnology.mg/",
+  },
 
   {
     title: "DS-Landing",
@@ -59,7 +68,7 @@ const projects = [
     image: "/ds.png?height=200&width=300",
     tags: ["React.js", "shadcn"],
     github: "https://github.com/bry4ng4rrix/Ds_Group",
-    demo: "https://dsgroup-pi.vercel.app/",
+    Lien: "https://dsgroup-pi.vercel.app/",
   },
   {
     title: "E-Vazo API",
@@ -155,6 +164,17 @@ export function Project() {
                     ))}
                   </div>
                 </CardContent>
+                {project.Lien && (
+                  <CardContent>
+                    <Link
+                      href={project.Lien}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le projet
+                    </Link>
+                  </CardContent>
+                )}
               </Card>
             </motion.div>
           ))}
