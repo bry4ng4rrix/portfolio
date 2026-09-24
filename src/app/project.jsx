@@ -180,7 +180,8 @@ export function Project() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Voir le projet
+                        Voir le projet{" "}
+                        <ExternalLink className="inline-block ml-1" size={16} />
                       </Link>
                     </Badge>
                   </CardContent>
