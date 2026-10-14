@@ -19,8 +19,8 @@ export default function Portfolio() {
       <Hero />
       <Parcours />
       <TechStack />
-      <Project />
       <Method />
+      <Project />
       <Services />
       <Footer />
     </div>
