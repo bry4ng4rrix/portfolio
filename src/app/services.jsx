@@ -76,7 +76,7 @@ export default function Services() {
         <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-              Nos expertises
+              Services
             </p>
             <h2 className="max-w-xl font-geo text-3xl font-bold leading-tight md:text-4xl">
               Six pôles, une seule interlocutrice
