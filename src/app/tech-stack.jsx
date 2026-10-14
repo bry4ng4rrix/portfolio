@@ -3,6 +3,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import { ServerCog } from "lucide-react";
+import {
+  SiDocker,
+  SiDjango,
+  SiFastapi,
+  SiFlutter,
+  SiGit,
+  SiLaravel,
+  SiLinux,
+  SiMui,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPhp,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiShadcnui,
+  SiSupabase,
+  SiTailwindcss,
+} from "react-icons/si";
 import { fadeUp, staggerContainer } from "./animations";
 
 const badgeStagger = {
@@ -24,12 +44,12 @@ export default function TechStack() {
     {
       category: "Frontend",
       technologies: [
-        "Next.js",
-        "React Native",
-        "Flutter",
-        "Tailwind CSS",
-        "Material UI",
-        "shadcn/ui",
+        { name: "Next.js", icon: SiNextdotjs },
+        { name: "React Native", icon: SiReact },
+        { name: "Flutter", icon: SiFlutter },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Material UI", icon: SiMui },
+        { name: "shadcn/ui", icon: SiShadcnui },
       ],
       color:
         "bg-blue-500/10 text-blue-600 dark:text-blue-300 border-blue-500/20",
@@ -37,19 +57,26 @@ export default function TechStack() {
     {
       category: "Backend",
       technologies: [
-        "Python",
-        "Django",
-        "FastAPI",
-        "PHP",
-        "Laravel",
-        "Node.js",
+        { name: "Python", icon: SiPython },
+        { name: "Django", icon: SiDjango },
+        { name: "FastAPI", icon: SiFastapi },
+        { name: "PHP", icon: SiPhp },
+        { name: "Laravel", icon: SiLaravel },
+        { name: "Node.js", icon: SiNodedotjs },
       ],
       color:
         "bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 border-emerald-500/20",
     },
     {
       category: "Environnement & Outils",
-      technologies: ["Linux", "Docker", "Git", "Supabase", "Vps", "PostgreSQL"],
+      technologies: [
+        { name: "Linux", icon: SiLinux },
+        { name: "Docker", icon: SiDocker },
+        { name: "Git", icon: SiGit },
+        { name: "Supabase", icon: SiSupabase },
+        { name: "VPS", icon: ServerCog },
+        { name: "PostgreSQL", icon: SiPostgresql },
+      ],
       color:
         "bg-orange-500/10 text-orange-600 dark:text-orange-300 border-orange-500/20",
     },
@@ -75,9 +102,9 @@ export default function TechStack() {
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
         >
-          {techCategories.map((category, index) => (
+          {techCategories.map((category) => (
             <motion.div
-              key={index}
+              key={category.category}
               variants={fadeUp}
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -96,13 +123,22 @@ export default function TechStack() {
                     whileInView="show"
                     viewport={{ once: true, margin: "-50px" }}
                   >
-                    {category.technologies.map((tech, techIndex) => (
-                      <motion.div key={techIndex} variants={badgeFade}>
-                        <Badge className={`backdrop-blur-sm ${category.color}`}>
-                          {tech}
-                        </Badge>
-                      </motion.div>
-                    ))}
+                    {category.technologies.map((tech) => {
+                      const Icon = tech.icon;
+                      return (
+                        <motion.div key={tech.name} variants={badgeFade}>
+                          <Badge
+                            className={`inline-flex items-center gap-2 backdrop-blur-sm ${category.color}`}
+                          >
+                            <Icon
+                              aria-hidden="true"
+                              className="h-4 w-4 shrink-0"
+                            />
+                            <span>{tech.name}</span>
+                          </Badge>
+                        </motion.div>
+                      );
+                    })}
                   </motion.div>
                 </CardContent>
               </Card>

@@ -37,7 +37,10 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
+    <footer
+      id="contact"
+      className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
@@ -52,13 +55,22 @@ export default function Footer() {
               Contact
             </h3>
             <address className="mt-3 flex flex-col gap-2 text-sm not-italic text-muted-foreground">
-              <a className="transition-colors hover:text-primary" href="mailto:bryanmfb4@gmail.com">
+              <a
+                className="transition-colors hover:text-primary"
+                href="mailto:bryanmfb4@gmail.com"
+              >
                 bryanmfb4@gmail.com
               </a>
-              <a className="transition-colors hover:text-primary" href="mailto:bryan@labeltechnology.mg">
+              <a
+                className="transition-colors hover:text-primary"
+                href="mailto:bryan@labeltechnology.mg"
+              >
                 bryan@labeltechnology.mg
               </a>
-              <a className="transition-colors hover:text-primary" href="tel:+261383572066">
+              <a
+                className="transition-colors hover:text-primary"
+                href="tel:+261383572066"
+              >
                 +261 38 35 720 66
               </a>
               <span>Ankadikely Ilafy</span>
@@ -70,7 +82,10 @@ export default function Footer() {
               <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground md:text-right">
                 Navigation
               </h3>
-              <nav aria-label="Navigation de pied de page" className="mt-2 flex flex-wrap gap-1 md:justify-end">
+              <nav
+                aria-label="Navigation de pied de page"
+                className="mt-2 flex flex-wrap gap-1 md:justify-end"
+              >
                 {links.map((item) => (
                   <SmoothScrollButton key={item.link} to={item.link}>
                     {item.nom}
@@ -100,8 +115,8 @@ export default function Footer() {
         </div>
 
         <p className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          Copyright © {new Date().getFullYear()} - Tous droits réservés par
-          {
+          Copyright © {new Date().getFullYear()} - Allsafe. Tous droits
+          réservés.
         </p>
       </div>
     </footer>
