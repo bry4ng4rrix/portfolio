@@ -47,9 +47,9 @@ const siteUrl =
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title:
-    "Bryan Garrix - Développeur Full-Stack | React, Next.js, Django, FastAPI",
+    "Bryan Garrix | Développement web, digital et services IT à Madagascar",
   description:
-    "Portfolio de Bryan Garrix, développeur full-stack freelance spécialisé en React, Next.js, Python (Django, FastAPI) et API REST. Découvrez mes projets web et applications sur mesure.",
+    "Bryan Garrix accompagne vos projets à Madagascar : développement web et mobile, digitalisation, marketing digital, traitement de données, matériel informatique et comptabilité.",
   keywords: [
     "Bryan Garrix",
     "Milson Fanoela Bryan",
@@ -72,14 +72,27 @@ export const metadata = {
     "développeur frontend",
     "développeur backend",
     "développeur Madagascar",
+    "développement web Madagascar",
+    "développement mobile Madagascar",
+    "digitalisation entreprise",
+    "transformation numérique Madagascar",
+    "marketing digital Madagascar",
+    "SEO Madagascar",
+    "traitement de données Madagascar",
+    "saisie et analyse de données",
+    "matériel informatique Madagascar",
+    "vente et installation matériel informatique",
+    "comptabilité Madagascar",
+    "services informatiques Madagascar",
     "UI/UX design",
   ],
   authors: [{ name: "Bryan Garrix" }],
   creator: "Bryan Garrix",
   openGraph: {
-    title: "Bryan Garrix - Développeur Full-Stack",
+    title:
+      "Bryan Garrix | Développement web, digital et services IT à Madagascar",
     description:
-      "Développeur full-stack freelance spécialisé en React, Next.js, Python (Django, FastAPI) et API REST.",
+      "Développement web et mobile, digitalisation, marketing digital, traitement de données, matériel informatique et comptabilité à Madagascar.",
     type: "website",
     url: siteUrl,
     siteName: "Bryan Garrix Portfolio",
@@ -88,9 +101,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bryan Garrix - Développeur Full-Stack",
+    title:
+      "Bryan Garrix | Développement web, digital et services IT à Madagascar",
     description:
-      "Développeur full-stack freelance spécialisé en React, Next.js, Python (Django, FastAPI) et API REST.",
+      "Développement web et mobile, digitalisation, marketing digital, traitement de données, matériel informatique et comptabilité à Madagascar.",
     images: ["/bg.png"],
   },
   robots: {
@@ -114,9 +128,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-    <head>
-    <meta name="google-site-verification" content="CoZ964I0ggNRDIKWX_Gm3bYiFLU772pNUhkBKmoCiTA" />
-    </head>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="CoZ964I0ggNRDIKWX_Gm3bYiFLU772pNUhkBKmoCiTA"
+        />
+      </head>
       <body
         className={`${montserrat.variable} ${geo.variable} ${playwrite.variable} ${kodeMono.variable} antialiased`}
       >
