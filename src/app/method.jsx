@@ -62,7 +62,7 @@ export default function Method() {
               className="group flex min-w-0 flex-col"
               style={{ "--step-color": step.color }}
             >
-              <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-muted shadow-lg shadow-black/10">
+              {/* <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-muted shadow-lg shadow-black/10">
                 <Image
                   src={step.image}
                   alt={step.alt}
@@ -70,7 +70,7 @@ export default function Method() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
-              </div>
+              </div> */}
               <div className="mb-3 mt-5 flex items-center justify-between">
                 <span
                   className="font-kode text-4xl font-bold text-foreground/15 transition-colors group-hover:text-(--step-color)"
