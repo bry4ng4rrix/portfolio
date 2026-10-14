@@ -41,7 +41,7 @@ export default function Parcours() {
       year: "Avril 2026",
       title: "Développeur Label technology",
       description:
-        "Intégration dans l'équipe de Label Technology, une entreprise spécialisée dans le développement d'applications web et mobiles pour des clients variés.",
+        "J'ai rejoint l'équipe de Label Technology, spécialisée dans le développement d'applications web et mobiles pour des clients variés.",
     },
   ];
 

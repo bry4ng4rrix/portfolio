@@ -13,9 +13,9 @@ import {
 const services = [
   {
     name: "Développement",
-    headline: "On ne livre pas du code. On livre de la croissance.",
+    headline: "Je ne livre pas seulement du code : je crée de la croissance.",
     description:
-      "Applications web et mobile sur mesure, ERP, CRM, plateformes métier. Du prototype au système d'information complet.",
+      "Je conçois des applications web et mobiles sur mesure, des ERP, des CRM et des plateformes métier, du prototype au système d'information complet.",
     image: "/services/developpement.jpg",
     color: "#3B82F6",
     icon: CodeXml,
@@ -25,7 +25,7 @@ const services = [
     name: "Digitalisation",
     headline: "Vos processus papier coûtent de l'argent.",
     description:
-      "Audit, conseil, déploiement ERP/CRM et formation des équipes. Une transformation numérique complète.",
+      "J'analyse vos besoins, vous conseille et déploie des solutions ERP/CRM, puis je forme vos équipes pour réussir leur transformation numérique.",
     image: "/services/digitalisation.jpg",
     color: "#10B981",
     icon: RefreshCw,
@@ -33,18 +33,18 @@ const services = [
   },
   {
     name: "Marketing digital",
-    headline: "Votre audience existe déjà. On va la trouver.",
+    headline: "Je vous aide à trouver votre audience.",
     description:
-      "SEO, SEA, réseaux sociaux et analytics. Une stratégie orientée vers des résultats mesurables.",
+      "Je définis une stratégie SEO, SEA et réseaux sociaux, puis j'analyse les résultats pour améliorer votre visibilité.",
     image: "/services/marketing.jpg",
     color: "#EC4899",
     icon: TrendingUp,
   },
   {
     name: "Traitement de données",
-    headline: "Vos données dorment. On les réveille.",
+    headline: "Je donne vie à vos données.",
     description:
-      "Numérisation, saisie, nettoyage, structuration et analyse, sur supports physiques comme numériques.",
+      "Je numérise, saisis, nettoie, structure et analyse vos données, qu'elles soient sur support physique ou numérique.",
     image: "/services/donnees.jpg",
     color: "#38BDF8",
     icon: Database,
@@ -53,7 +53,7 @@ const services = [
     name: "Matériel IT",
     headline: "L'infrastructure qui tient la route.",
     description:
-      "Ordinateurs, serveurs, réseau et périphériques. Conseil, livraison et installation B2B à Antananarivo et en régions.",
+      "Je vous conseille dans le choix de vos ordinateurs, serveurs, équipements réseau et périphériques, puis j'assure leur livraison et leur installation à Antananarivo et en régions.",
     image: "/services/materiel.jpg",
     color: "#F59E0B",
     icon: Cpu,
@@ -62,7 +62,7 @@ const services = [
     name: "Comptabilité",
     headline: "Vos chiffres, enfin lisibles.",
     description:
-      "Saisie comptable, rapprochements bancaires et reporting financier mensuel pour des décisions éclairées.",
+      "Je réalise la saisie comptable, les rapprochements bancaires et le reporting financier mensuel pour éclairer vos décisions.",
     image: "/services/comptabilite.jpg",
     color: "#F87171",
     icon: Calculator,
@@ -76,15 +76,15 @@ export default function Services() {
         <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-              Services
+              Mes expertises
             </p>
             <h2 className="max-w-xl font-geo text-3xl font-bold leading-tight md:text-4xl">
               Six pôles, une seule interlocutrice
               <span className="text-gradient">.</span>
             </h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
-              Deux expertises cœur, le développement sur mesure et la
-              digitalisation, complétées par quatre pôles mobilisés selon votre
+              Je réunis deux expertises clés, le développement sur mesure et la
+              digitalisation, et mobilise quatre autres compétences selon votre
               projet.
             </p>
           </div>

@@ -52,7 +52,8 @@ export default function Footer() {
               Allsafe<span className="text-primary">.</span>
             </h2>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Votre partenaire technologique basé à Ankadikely Ilafy.
+              Je vous accompagne dans vos projets technologiques depuis
+              Ankadikely Ilafy.
             </p>
           </section>
 

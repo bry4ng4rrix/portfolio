@@ -5,9 +5,9 @@ const steps = [
     number: "01",
     title: "Écoute",
     description:
-      "Cadrage précis de vos enjeux avant toute proposition. On comprend votre métier, vos contraintes et vos objectifs avant de suggérer quoi que ce soit.",
+      "J'analyse vos enjeux et prends le temps de comprendre votre métier, vos contraintes et vos objectifs avant de vous proposer une solution.",
     image: "/method/ecoute.jpg",
-    alt: "Équipe travaillant ensemble autour d'ordinateurs",
+    alt: "Personnes échangeant autour d'ordinateurs",
     color: "#3B82F6",
   },
   {
@@ -23,7 +23,7 @@ const steps = [
     number: "03",
     title: "Exécution",
     description:
-      "Délais tenus, budget respecté, livrables concrets et mesurables. Notre réputation se construit livraison après livraison, pas sur des promesses en avant-vente.",
+      "Je respecte les délais et le budget, et je m'engage sur des livrables concrets et mesurables. Je bâtis ma réputation projet après projet, grâce aux résultats.",
     image: "/method/execution.jpg",
     alt: "Présentation d'un projet devant un ordinateur",
     color: "#FF6B6B",
@@ -32,7 +32,7 @@ const steps = [
     number: "04",
     title: "Suivi",
     description:
-      "La livraison n'est pas la fin de l'histoire : c'est le premier jour de votre accélération. Support continu, itérations, évolutions. Votre interlocuteur reste le même, votre ambition grandit.",
+      "La livraison marque le début de votre accélération. J'assure le support, les itérations et les évolutions. Je reste votre interlocutrice à chaque étape.",
     image: "/method/suivi.jpg",
     alt: "Jeune pousse symbolisant la croissance",
     color: "#10B981",
@@ -45,10 +45,10 @@ export default function Method() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-10">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-            Notre méthode
+            Ma méthode
           </p>
           <h2 className="font-geo text-3xl font-bold md:text-4xl">
-            Comment on <span className="text-gradient">travaille.</span>
+            Comment je <span className="text-gradient">travaille.</span>
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Quatre étapes, un interlocuteur unique, zéro boîte noire.
