@@ -79,7 +79,7 @@ export default function Services() {
               Nos expertises
             </p>
             <h2 className="max-w-xl font-geo text-3xl font-bold leading-tight md:text-4xl">
-              Six pôles, une seule équipe
+              Six pôles, une seule interlocutrice
               <span className="text-gradient">.</span>
             </h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">

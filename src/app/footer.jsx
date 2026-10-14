@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { SiGmail } from "react-icons/si";
 import { FaFacebook, FaGithub, FaWhatsapp } from "react-icons/fa6";
+import { MapPin, Mail, Phone } from "lucide-react";
 import { SmoothScrollButton } from "@/components/module/SmoothScrollButton";
 
 const links = [
-  { link: "home", nom: "Acceuil" },
+  { link: "home", nom: "Accueil" },
   { link: "parcours", nom: "Parcours" },
   { link: "projects", nom: "Projets" },
 ];
@@ -39,85 +40,130 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border"
+      className="border-t border-border bg-background/70 px-4 pb-12 pt-24 sm:px-6 sm:py-12 lg:px-8"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="grid gap-10 md:grid-cols-3">
-          <div>
-            <h2 className="text-xl font-semibold text-foreground">Allsafe</h2>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Votre partenaire technologique à Ankadikely Ilafy.
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 border-b border-border pb-10 md:grid-cols-[1.2fr_0.8fr_1.2fr] md:gap-12">
+          <section aria-labelledby="footer-brand">
+            <h2
+              id="footer-brand"
+              className="font-kode text-2xl font-bold tracking-wide text-foreground"
+            >
+              Allsafe<span className="text-primary">.</span>
+            </h2>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              Votre partenaire technologique basé à Ankadikely Ilafy.
             </p>
-          </div>
+          </section>
 
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
-              Contact
+          <nav aria-label="Navigation de pied de page">
+            <h3 className="text-sm font-semibold text-foreground">
+              Navigation
             </h3>
-            <address className="mt-3 flex flex-col gap-2 text-sm not-italic text-muted-foreground">
-              <a
-                className="transition-colors hover:text-primary"
-                href="mailto:bryanmfb4@gmail.com"
-              >
-                bryanmfb4@gmail.com
-              </a>
-              <a
-                className="transition-colors hover:text-primary"
-                href="mailto:bryan@labeltechnology.mg"
-              >
-                bryan@labeltechnology.mg
-              </a>
-              <a
-                className="transition-colors hover:text-primary"
-                href="tel:+261383572066"
-              >
-                +261 38 35 720 66
-              </a>
-              <span>Ankadikely Ilafy</span>
-            </address>
-          </div>
-
-          <div className="flex flex-col gap-5 md:items-end">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground md:text-right">
-                Navigation
-              </h3>
-              <nav
-                aria-label="Navigation de pied de page"
-                className="mt-2 flex flex-wrap gap-1 md:justify-end"
-              >
-                {links.map((item) => (
-                  <SmoothScrollButton key={item.link} to={item.link}>
+            <ul className="mt-4 flex flex-col items-start gap-2">
+              {links.map((item) => (
+                <li key={item.link}>
+                  <SmoothScrollButton to={item.link}>
                     {item.nom}
                   </SmoothScrollButton>
-                ))}
-              </nav>
-            </div>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-            <div className="flex gap-5 md:justify-end">
-              {socials.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <Link
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="text-muted-foreground transition-all hover:scale-110 hover:text-primary"
-                  >
-                    <Icon className="h-5 w-5" />
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
+          <section aria-labelledby="footer-contact">
+            <h3
+              id="footer-contact"
+              className="text-sm font-semibold text-foreground"
+            >
+              Contact
+            </h3>
+            <address className="mt-4 flex flex-col gap-4 not-italic">
+              <a
+                className="group flex min-w-0 items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                href="mailto:bryanmfb4@gmail.com"
+              >
+                <Mail
+                  aria-hidden="true"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-primary"
+                />
+                <span className="min-w-0">
+                  <span className="block text-xs text-muted-foreground/75">
+                    E-mail personnel
+                  </span>
+                  <span className="break-all">bryanmfb4@gmail.com</span>
+                </span>
+              </a>
+              <a
+                className="group flex min-w-0 items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                href="mailto:bryan@labeltechnology.mg"
+              >
+                <SiGmail
+                  aria-hidden="true"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-primary"
+                />
+                <span className="min-w-0">
+                  <span className="block text-xs text-muted-foreground/75">
+                    E-mail professionnel
+                  </span>
+                  <span className="break-all">bryan@labeltechnology.mg</span>
+                </span>
+              </a>
+              <a
+                className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                href="tel:+261383572066"
+              >
+                <Phone
+                  aria-hidden="true"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-primary"
+                />
+                <span>
+                  <span className="block text-xs text-muted-foreground/75">
+                    Téléphone / WhatsApp
+                  </span>
+                  +261 38 35 720 66
+                </span>
+              </a>
+              <div className="flex items-start gap-3 text-sm text-muted-foreground">
+                <MapPin
+                  aria-hidden="true"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-primary"
+                />
+                <span>
+                  <span className="block text-xs text-muted-foreground/75">
+                    Adresse
+                  </span>
+                  Ankadikely Ilafy
+                </span>
+              </div>
+            </address>
+          </section>
         </div>
 
-        <p className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          Copyright © {new Date().getFullYear()} - Allsafe. Tous droits
-          réservés.
-        </p>
+        <div className="flex flex-col gap-5 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Allsafe. Tous droits réservés.
+          </p>
+          <nav aria-label="Réseaux sociaux" className="flex items-center gap-2">
+            {socials.map((social) => {
+              const Icon = social.icon;
+              const isExternal = social.href.startsWith("https://");
+              return (
+                <Link
+                  key={social.label}
+                  href={social.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noopener noreferrer" : undefined}
+                  aria-label={social.label}
+                  title={social.label}
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:bg-primary/5 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <Icon className="h-4 w-4" />
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
       </div>
     </footer>
   );

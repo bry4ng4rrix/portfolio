@@ -20,8 +20,8 @@ export default function Portfolio() {
       <Parcours />
       <TechStack />
       <Project />
-      <Services />
       <Method />
+      <Services />
       <Footer />
     </div>
   );

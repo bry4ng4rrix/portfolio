@@ -10,6 +10,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -40,8 +41,8 @@ const projects = [
       "Une plateforme de gestion dédiée à une boutique spécialisée dans la vente de vêtements et d’articles de mode. Elle permet de centraliser la gestion quotidienne de l'activité et de suivre l'ensemble du cycle commercial depuis l'approvisionnement jusqu'à la vente.",
     image: "/ekajy.png?height=200&width=300",
     tags: ["React", "Django", "REST API", "Tailwind"],
-    github: "https://github.com/bry4ng4rrix/",
-    demo: "http://157.173.103.147:3000",
+    github: "",
+    demo: "",
   },
   {
     title: "Appel d'Offre",
@@ -172,20 +173,54 @@ export function Project() {
                     ))}
                   </div>
                 </CardContent>
-                {project.Lien && (
-                  <CardContent>
-                    <Badge>
-                      <Link
-                        href={project.Lien}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Voir le projet{" "}
-                        <ExternalLink className="inline-block ml-1" size={16} />
-                      </Link>
-                    </Badge>
-                  </CardContent>
-                )}
+                <CardFooter>
+                  <div className="flex flex-wrap gap-2">
+                    {(() => {
+                      const demoUrl =
+                        (project.demo &&
+                        project.demo !== project.github &&
+                        project.demo !== "#"
+                          ? project.demo
+                          : "") ||
+                        (project.Lien && project.Lien !== "#"
+                          ? project.Lien
+                          : "");
+
+                      return demoUrl ? (
+                        <Badge asChild variant="outline" className="text-xs">
+                          <Link
+                            href={demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Démo
+                            <ExternalLink aria-hidden="true" />
+                          </Link>
+                        </Badge>
+                      ) : (
+                        <Badge variant="secondary" className="text-xs">
+                          Démo privée
+                        </Badge>
+                      );
+                    })()}
+                    {project.github && project.github !== "#" ? (
+                      <Badge asChild variant="outline" className="text-xs">
+                        <Link
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github aria-hidden="true" />
+                          GitHub
+                        </Link>
+                      </Badge>
+                    ) : (
+                      <Badge variant="secondary" className="text-xs">
+                        Code privé
+                      </Badge>
+                    )}
+                  </div>
+                </CardFooter>
               </Card>
             </motion.div>
           ))}
