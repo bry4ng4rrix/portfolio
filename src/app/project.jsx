@@ -25,6 +25,12 @@ const projects = [
     demo: "http://157.173.103.147:8001/",
   },
   {
+    title: "Video Mind",
+    description:'Une applications mobile qui permet d'extraire le texte d\'une vidéo et de le résumer en quelques phrases, offrant ainsi une solution pratique pour les utilisateurs souhaitant obtenir rapidement l\'essentiel d\'une vidéo sans avoir à la regarder en entier.',
+    image: "/videomind.png?height=200&width=300",
+    tags: ["Flutter", "FastAPI", "LLM"],
+  },
+  {
     title: "Smartphone.mg Gerant",
     description:
       "une plateforme complète de gestion destinée à une boutique spécialisée dans la vente d’accessoires qui permet de centraliser et automatiser la gestion des produits, commandes, fournisseurs,livraisons, finances et performances commerciales depuis une interface unique.",
