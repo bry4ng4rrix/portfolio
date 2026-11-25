@@ -26,8 +26,8 @@ const projects = [
   },
   {
     title: "Video Mind",
-    description:'Une applications mobile qui permet d'extraire le texte d\'une vidéo et de le résumer en quelques phrases, offrant ainsi une solution pratique pour les utilisateurs souhaitant obtenir rapidement l\'essentiel d\'une vidéo sans avoir à la regarder en entier.',
-    image: "/videomind.png?height=200&width=300",
+    description:"Une applications mobile qui permet d'extraire le texte d\'une vidéo et de le résumer en quelques phrases, offrant ainsi une solution pratique pour les utilisateurs souhaitant obtenir rapidement l\'essentiel d\'une vidéo sans avoir à la regarder en entier.",
+    image: "/vide²omind.png?height=200&width=300",
     tags: ["Flutter", "FastAPI", "LLM"],
   },
   {
