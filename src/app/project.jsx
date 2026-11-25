@@ -18,6 +18,13 @@ import { fadeUp, staggerContainer } from "./animations";
 
 const projects = [
   {
+    title: "Label Collect",
+    description:"Les appels d'offres et offres d'emploi des bailleurs, des Nations unies, des ONG et des marchés publics, pour les entreprises, les consultants et les candidats qui y répondent.",
+    image: "/collect.png?height=200&width=300",
+    tags: ["Django", "Tailwind","LLM"],
+    demo: "http://157.173.103.147:8001/",
+  },
+  {
     title: "Smartphone.mg Gerant",
     description:
       "une plateforme complète de gestion destinée à une boutique spécialisée dans la vente d’accessoires qui permet de centraliser et automatiser la gestion des produits, commandes, fournisseurs,livraisons, finances et performances commerciales depuis une interface unique.",
